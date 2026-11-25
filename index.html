@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude Daigan · Operations &amp; Automation Specialist</title>
+<meta name="description" content="I build AI and Python workflows that remove manual data entry, screening and reporting.">
+<link rel="canonical" href="https://claudedaigan.com/portfolio/">
+<meta name="theme-color" content="#0e4a36">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Claude Daigan">
+<meta property="og:title" content="Claude Daigan · Operations &amp; Automation Specialist">
+<meta property="og:description" content="I build AI and Python workflows that remove manual data entry, screening and reporting.">
+<meta property="og:url" content="https://claudedaigan.com/portfolio/">
+<meta property="og:image" content="https://claudedaigan.com/portfolio/assets/img/og-1200x630.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Claude Daigan, Operations &amp; Automation Specialist">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Claude Daigan · Operations &amp; Automation Specialist">
+<meta name="twitter:description" content="I build AI and Python workflows that remove manual data entry, screening and reporting.">
+<meta name="twitter:image" content="https://claudedaigan.com/portfolio/assets/img/og-1200x630.png">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/archivo-narrow-latin.woff2" as="font" type="font/woff2" crossorigin>
+<!--css-->
+<style>
+@font-face {
+font-family: "Archivo";
+font-style: normal;
+font-weight: 100 900;
+font-display: swap;
+src: url("assets/fonts/archivo-latin.woff2") format("woff2");
+}
+@font-face {
+font-family: "Archivo Narrow";
+font-style: normal;
+font-weight: 400 700;
+font-display: swap;
+src: url("assets/fonts/archivo-narrow-latin.woff2") format("woff2");
+}
+:root {
+--desk: #d9e3d6;
+--paper: #f1f5ef;
+--label: #dfe9dc;
+--ink: #0e4a36;
+--ink-deep: #093526;
+--ink-soft: #2c5c49;
+--fill: #15191f;
+--fill-soft: #39424b;
+--stamp: #b8301b;
+--rule: 1px solid var(--ink);
+--rule-bold: 2px solid var(--ink);
+--label-w: 11rem;
+--pad: clamp(1rem, 2.2vw, 1.75rem);
+--sans: "Archivo", "Helvetica Neue", Arial, sans-serif;
+--narrow: "Archivo Narrow", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+color-scheme: light;
+scrollbar-color: var(--ink) var(--label);
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+margin: 0;
+background: var(--desk);
+color: var(--fill);
+font-family: var(--sans);
+font-size: 1.0625rem;
+line-height: 1.55;
+font-variant-numeric: tabular-nums;
+text-rendering: optimizeLegibility;
+}
+::selection { background: var(--ink); color: var(--paper); }
+img, video { display: block; max-width: 100%; }
+h1, h2, h3, p, ul, ol, dl, dd, figure { margin: 0; }
+ul { padding: 0; list-style: none; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--stamp); outline-offset: 2px; }
+.sr-only {
+position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+.skip {
+position: absolute; left: 1rem; top: -3rem; z-index: 5;
+background: var(--ink); color: var(--paper); padding: .6rem 1rem; font-weight: 600;
+}
+.skip:focus { top: 1rem; }
+.sheet {
+max-width: 78rem;
+margin: clamp(0rem, 3vw, 2.5rem) auto;
+background: var(--paper);
+border: var(--rule-bold);
+}
+.masthead {
+display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+gap: .75rem 2rem;
+padding: 1rem var(--pad);
+border-bottom: var(--rule-bold);
+}
+.form-title {
+font-family: var(--narrow); font-weight: 700; text-transform: uppercase;
+font-size: 1.125rem; letter-spacing: .06em; color: var(--ink);
+}
+.index { display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; }
+.index a {
+font-family: var(--narrow); font-weight: 600; font-size: 1rem; color: var(--ink);
+text-decoration: none; padding: .35rem 0; border-bottom: 2px solid transparent;
+}
+.index a:hover { border-bottom-color: var(--ink); }
+.bar {
+margin: 0;
+background: var(--ink); color: var(--paper);
+font-family: var(--narrow); font-weight: 700; text-transform: uppercase;
+letter-spacing: .05em; line-height: 1.2;
+font-size: clamp(1.25rem, 1.1rem + .8vw, 1.75rem);
+padding: .7rem var(--pad) .65rem;
+}
+section { scroll-margin-top: 1rem; }
+section + section, .sheet > section:first-of-type { border-top: 0; }
+.row {
+display: grid;
+grid-template-columns: var(--label-w) minmax(0, 1fr);
+border-bottom: var(--rule);
+}
+.row:last-child { border-bottom: 0; }
+.label {
+background: var(--label);
+border-right: var(--rule);
+padding: .85rem var(--pad) .85rem 1rem;
+font-family: var(--narrow); font-weight: 700; text-transform: uppercase;
+font-size: .8125rem; letter-spacing: .05em; line-height: 1.3; color: var(--ink);
+}
+.entry { padding: .85rem var(--pad); min-width: 0; }
+.entry p + p { margin-top: .75rem; }
+.prose { max-width: 60ch; text-wrap: pretty; }
+.note { color: var(--fill-soft); max-width: 60ch; }
+.personal {
+display: grid;
+grid-template-columns: var(--label-w) minmax(0, 1fr) clamp(12rem, 20vw, 16.5rem);
+grid-template-areas:
+"name name photo"
+"name name photo"
+"l3 v3 photo"
+"l4 v4 v4"
+"l5 v5 v5"
+"l6 v6 v6";
+}
+.personal > *:not(.name) { border-bottom: var(--rule); }
+.personal .label { display: flex; align-items: center; }
+.l3 { grid-area: l3; }
+.l4 { grid-area: l4; } .l5 { grid-area: l5; align-items: flex-start !important; } .l6 { grid-area: l6; }
+.v3 { grid-area: v3; } .v4 { grid-area: v4; } .v5 { grid-area: v5; } .v6 { grid-area: v6; }
+.v3, .v4, .v5, .v6 { padding: 1rem var(--pad); display: flex; align-items: center; min-width: 0; }
+.name {
+grid-area: name;
+display: grid; grid-template-columns: var(--label-w) minmax(0, 1fr);
+font-size: 1rem; line-height: 1;
+}
+.name .label { border-bottom: var(--rule); }
+.comb {
+--box: clamp(2.6rem, 7.4vw, 7rem);
+display: grid; grid-template-columns: repeat(auto-fill, var(--box));
+grid-auto-rows: var(--box); height: calc(var(--box) + 1px); overflow: hidden;
+border-bottom: var(--rule);
+font-weight: 800; font-size: calc(var(--box) * .64); line-height: 1;
+color: var(--fill);
+}
+.comb span {
+display: grid; place-items: center;
+border-right: var(--rule);
+padding-top: .04em;
+}
+.photo {
+grid-area: photo;
+border-left: var(--rule);
+position: relative;
+background: var(--label);
+}
+.photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; }
+.title {
+font-size: clamp(1.25rem, 1rem + 1.2vw, 2rem); font-weight: 600; line-height: 1.2;
+letter-spacing: -.01em; text-wrap: balance;
+}
+.status { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.stamp {
+display: inline-block;
+font-weight: 800; text-transform: uppercase; letter-spacing: .08em;
+font-size: 1.25rem; line-height: 1;
+color: var(--stamp);
+border: 3px solid var(--stamp);
+padding: .45rem .7rem .4rem;
+transform: rotate(-4deg);
+}
+.statement {
+font-size: clamp(1.125rem, 1rem + .7vw, 1.5rem); line-height: 1.4;
+max-width: 40ch; text-wrap: pretty;
+}
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem 1rem; }
+.addr { font-family: var(--narrow); font-size: 1rem; color: var(--fill-soft); }
+.addr a { color: var(--fill); text-underline-offset: .2em; }
+.btn {
+display: inline-flex; align-items: center; gap: .55rem;
+min-height: 3rem; padding: .7rem 1.25rem;
+font-family: var(--sans); font-weight: 700; font-size: 1.0625rem; line-height: 1;
+text-decoration: none; border: 2px solid var(--ink);
+transition: background-color .18s cubic-bezier(.16, 1, .3, 1), color .18s cubic-bezier(.16, 1, .3, 1);
+}
+.btn svg { width: 1.15rem; height: 1.15rem; flex: none; }
+.btn-primary { background: var(--ink); color: var(--paper); }
+.btn-primary:hover { background: var(--ink-deep); border-color: var(--ink-deep); }
+.btn-plain { background: transparent; color: var(--ink); }
+.btn-plain:hover { background: var(--label); }
+.skills {
+display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .55rem 2rem;
+}
+.skills li { display: flex; gap: .6rem; align-items: flex-start; line-height: 1.35; }
+.tick { width: 1.15rem; height: 1.15rem; flex: none; margin-top: .1rem; color: var(--ink); }
+.intro { padding: .85rem max(var(--pad), calc(100% - 60ch)) .85rem var(--pad); border-bottom: var(--rule); max-width: none; }
+.cells {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 1px;
+}
+.cell { outline: 1px solid var(--ink); display: flex; flex-direction: column; min-width: 0; }
+.media {
+aspect-ratio: 4 / 5; background: var(--fill); overflow: hidden; position: relative;
+}
+.media img, .media video { width: 100%; height: 100%; object-fit: cover; }
+.cell-body { padding: .8rem 1rem 1rem; display: flex; flex-direction: column; gap: .3rem; flex: 1; }
+.cell-title { font-size: 1.0625rem; font-weight: 700; line-height: 1.25; }
+.cell-title a { text-decoration: none; }
+.cell-title a:hover { text-decoration: underline; text-underline-offset: .18em; }
+.kind {
+font-family: var(--narrow); font-weight: 600; font-size: .9375rem; color: var(--ink);
+}
+.tools { font-family: var(--narrow); font-size: .9375rem; color: var(--fill-soft); margin-top: auto; padding-top: .35rem; }
+.cell-link { display: block; text-decoration: none; }
+.cell-link img { transition: opacity .2s cubic-bezier(.16, 1, .3, 1); }
+.cell-link:hover img { opacity: .86; }
+.ext { width: .85em; height: .85em; display: inline-block; vertical-align: -.05em; margin-left: .2em; }
+.ledger > li {
+display: grid;
+grid-template-columns: minmax(0, 15rem) minmax(0, 1fr) minmax(0, 17rem);
+border-bottom: var(--rule);
+}
+.ledger > li:last-child { border-bottom: 0; }
+.ledger h3 {
+background: var(--label); border-right: var(--rule);
+padding: 1rem var(--pad) 1rem 1rem;
+font-size: 1.1875rem; line-height: 1.25; font-weight: 700; color: var(--fill);
+text-wrap: balance;
+}
+.ledger .desc { padding: 1rem var(--pad); max-width: 60ch; text-wrap: pretty; }
+.ledger .desc p + p { margin-top: .6rem; }
+.ledger .meta {
+border-left: var(--rule); padding: 1rem var(--pad);
+display: flex; flex-direction: column; gap: .9rem;
+}
+.meta-label {
+font-family: var(--narrow); font-weight: 700; text-transform: uppercase;
+font-size: .8125rem; letter-spacing: .05em; color: var(--ink); margin-bottom: .2rem;
+}
+.stack { font-family: var(--narrow); font-size: .9375rem; color: var(--fill-soft); line-height: 1.4; text-wrap: pretty; }
+.links { display: flex; flex-direction: column; gap: .45rem; }
+.links a {
+font-weight: 600; color: var(--ink); text-decoration: underline;
+text-decoration-thickness: 1px; text-underline-offset: .2em;
+padding: .15rem 0;
+}
+.links a:hover { color: var(--ink-deep); text-decoration-thickness: 2px; }
+.table { width: 100%; border-collapse: collapse; }
+.table th {
+background: var(--label); text-align: left; vertical-align: bottom;
+font-family: var(--narrow); font-weight: 700; text-transform: uppercase;
+font-size: .8125rem; letter-spacing: .05em; color: var(--ink);
+padding: .6rem 1rem; border-bottom: var(--rule); border-right: var(--rule);
+}
+.table td {
+padding: 1rem; vertical-align: top; border-bottom: var(--rule); border-right: var(--rule);
+}
+.table th:last-child, .table td:last-child { border-right: 0; }
+.table tr:last-child td { border-bottom: 0; }
+.table .dates { white-space: nowrap; font-family: var(--narrow); font-size: 1rem; color: var(--fill-soft); }
+.table .strong { font-weight: 700; }
+.table ul { display: grid; gap: .3rem; }
+.table li { padding-left: 1rem; position: relative; text-wrap: pretty; }
+.table li::before {
+content: ""; position: absolute; left: 0; top: .62em;
+width: .45rem; height: 2px; background: var(--ink);
+}
+.certs { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.cert-media {
+aspect-ratio: 16 / 10; background: var(--label); display: grid; place-items: center;
+padding: .9rem; border-bottom: var(--rule); overflow: hidden;
+}
+.cert-media { position: relative; }
+.cert-media img { position: absolute; inset: .9rem; width: calc(100% - 1.8rem); height: calc(100% - 1.8rem); object-fit: contain; }
+.contact .entry { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+.contact-lede { font-size: clamp(1.125rem, 1rem + .6vw, 1.375rem); line-height: 1.45; max-width: 46ch; margin-bottom: 1.25rem; }
+.foot {
+display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem;
+padding: .9rem var(--pad);
+border-top: var(--rule-bold);
+font-family: var(--narrow); font-size: .9375rem; color: var(--fill-soft);
+}
+.foot a { color: var(--ink); font-weight: 600; text-underline-offset: .2em; display: inline-flex; align-items: center; gap: .3rem; }
+.foot svg { width: .9rem; height: .9rem; }
+@media (max-width: 68rem) {
+.cells { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.ledger > li { grid-template-columns: minmax(0, 1fr) minmax(0, 15rem); }
+.ledger h3 { grid-column: 1 / -1; border-right: 0; border-bottom: var(--rule); }
+.ledger .desc { grid-column: 1; }
+.ledger .meta { grid-column: 2; }
+}
+@media (max-width: 52rem) {
+:root { --label-w: 8.5rem; }
+.cells { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.table .dates { white-space: normal; width: 7.5rem; }
+.certs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.skills { grid-template-columns: 1fr; }
+.personal {
+grid-template-columns: var(--label-w) minmax(0, 1fr) clamp(7rem, 24vw, 11rem);
+grid-template-areas:
+"name name name"
+"name name name"
+"l3 v3 photo"
+"l4 v4 photo"
+"l5 v5 v5"
+"l6 v6 v6";
+}
+.comb { --box: clamp(2.6rem, 8.2vw, 4.5rem); }
+}
+@media (max-width: 40rem) {
+:root { --label-w: 5.75rem; --pad: 1rem; }
+body { font-size: 1rem; }
+.sheet { border-left: 0; border-right: 0; margin: 0; }
+.masthead { padding: .75rem 1rem; }
+.form-title { font-size: 1rem; }
+.masthead { flex-direction: column; align-items: stretch; gap: .25rem; }
+.index { gap: 0 1.1rem; }
+.index a { font-size: .9375rem; padding: .4rem 0; }
+.label { padding: .7rem .6rem; font-size: .75rem; letter-spacing: .03em; }
+.personal { grid-template-columns: var(--label-w) minmax(0, 1fr) 6.75rem; }
+.comb { --box: calc((100vw - var(--label-w) - 2px) / 6); }
+.v3, .v4, .v5, .v6 { padding: .75rem 1rem; }
+.title { font-size: 1.1875rem; }
+.stamp { font-size: 1rem; padding: .35rem .55rem .3rem; border-width: 2px; }
+.statement { font-size: 1.0625rem; }
+.btn { min-height: 2.9rem; padding: .65rem 1rem; font-size: 1rem; }
+.row { grid-template-columns: 1fr; }
+.row > .label { border-right: 0; border-bottom: var(--rule); padding: .5rem 1rem; }
+.cell-body { padding: .65rem .7rem .8rem; }
+.cell-title { font-size: 1rem; }
+.kind, .tools { font-size: .875rem; }
+.ledger > li { grid-template-columns: 1fr; }
+.ledger .meta { grid-column: 1; border-left: 0; border-top: var(--rule); flex-direction: row; flex-wrap: wrap; gap: .75rem 1.5rem; }
+.ledger .meta > div { flex: 1 1 12rem; }
+.ledger h3 { padding: .8rem 1rem; }
+.certs { grid-template-columns: 1fr; }
+.table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.table, .table tbody, .table tr, .table td { display: block; width: 100%; }
+.table .dates { width: 100%; white-space: nowrap; }
+.table tr { border-bottom: var(--rule); }
+.table tr:last-child { border-bottom: 0; }
+.table td { border: 0; padding: .2rem 1rem; }
+.table td:first-child { padding-top: .9rem; }
+.table td:last-child { padding-bottom: 1rem; }
+.table td[data-label]::before {
+content: attr(data-label); display: block;
+font-family: var(--narrow); font-weight: 700; text-transform: uppercase;
+font-size: .75rem; letter-spacing: .05em; color: var(--ink); margin-top: .35rem;
+}
+}
+</style>
+<!--/css-->
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+<symbol id="i-tick" viewBox="0 0 20 20"><rect x="1.5" y="1.5" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M5.2 10.4l3.1 3.1 6.6-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"/></symbol>
+<symbol id="i-mail" viewBox="0 0 20 20"><rect x="2" y="4" width="16" height="12" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M2.8 5l7.2 6 7.2-6" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+<symbol id="i-in" viewBox="0 0 20 20"><rect x="2" y="2" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M6.3 8.6v5.6M6.3 6v.2M9.4 14.2V8.6M9.4 11.1c0-1.6 1-2.6 2.3-2.6s2.1.8 2.1 2.5v3.2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="square"/></symbol>
+<symbol id="i-ext" viewBox="0 0 16 16"><path d="M6 3H3v10h10v-3M9 2.5h4.5V7M13.2 2.8L7.5 8.5" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+<symbol id="i-up" viewBox="0 0 16 16"><path d="M8 13.5V3M3.5 7.5L8 3l4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+</svg>
+<a class="skip" href="#main">Skip to content</a>
+<div class="sheet">
+<header class="masthead">
+<p class="form-title">Portfolio record</p>
+<nav class="index" aria-label="Sections">
+<a href="#about">About</a><a href="#creatives">Creatives</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#certificates">Certificates</a><a href="#contact">Contact</a>
+</nav>
+</header>
+<main id="main">
+<section id="personal" aria-labelledby="personal-h">
+<h2 class="bar" id="personal-h">Personal information</h2>
+<div class="personal">
+<h1 class="name"><span class="label" aria-hidden="true">First name</span><span class="comb" aria-hidden="true"><span>C</span><span>L</span><span>A</span><span>U</span><span>D</span><span>E</span><span></span><span></span><span></span><span></span><span></span><span></span></span><span class="label" aria-hidden="true">Surname</span><span class="comb" aria-hidden="true"><span>D</span><span>A</span><span>I</span><span>G</span><span>A</span><span>N</span><span></span><span></span><span></span><span></span><span></span><span></span></span><span class="sr-only">Claude Daigan</span></h1>
+<div class="photo"><img src="assets/img/profile-400.webp" srcset="assets/img/profile-200.webp 200w, assets/img/profile-400.webp 400w, assets/img/profile-600.webp 600w" sizes="(min-width: 52rem) 264px, 176px" width="400" height="400" alt="Portrait of Claude Daigan" fetchpriority="high"></div>
+<p class="label l3">Position</p>
+<div class="v3"><p class="title">Operations &amp; Automation Specialist</p></div>
+<p class="label l4">Status</p>
+<div class="v4"><p class="status"><span class="stamp">Available</span></p></div>
+<p class="label l5">Statement</p>
+<div class="v5"><p class="statement">I build AI and Python workflows that remove manual data entry, screening and reporting.</p></div>
+<p class="label l6">Contact</p>
+<div class="v6"><div class="actions">
+<a class="btn btn-primary" id="email-cta" href="mailto:claude_daigan@protonmail.com"><svg aria-hidden="true"><use href="#i-mail"/></svg>Email me</a>
+<a class="btn btn-plain" href="https://linkedin.com/in/claude-lester-d-a84558288/" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#i-in"/></svg>LinkedIn<span class="sr-only"> (opens in a new tab)</span></a>
+<span class="addr">claude_daigan@protonmail.com</span>
+</div></div>
+</div>
+</section>
+
+<section id="about" aria-labelledby="about-h">
+<h2 class="bar" id="about-h">About me</h2>
+<div class="row"><p class="label">Summary</p><div class="entry"><p class="prose">Operations and automation specialist. I have worked in banking, HR, procurement and digital marketing, which is where I learned how much of the work is repetitive. Now I remove that repetition with Python, n8n and AI agents: data entry, applicant screening, reporting and outreach. I care about the unglamorous details, because that is where automation either holds up or quietly breaks.</p></div></div>
+<div class="row"><h3 class="label">Skills</h3><div class="entry"><ul class="skills"><li><svg class="tick" aria-hidden="true"><use href="#i-tick"/></svg><span>AI Workflow &amp; Process Automation (n8n)</span></li><li><svg class="tick" aria-hidden="true"><use href="#i-tick"/></svg><span>Python Automation &amp; Scripting</span></li><li><svg class="tick" aria-hidden="true"><use href="#i-tick"/></svg><span>AI Agent Development (LangChain, LangGraph &amp; DeepAgents)</span></li><li><svg class="tick" aria-hidden="true"><use href="#i-tick"/></svg><span>Business Process Optimization</span></li><li><svg class="tick" aria-hidden="true"><use href="#i-tick"/></svg><span>Advanced Google Sheets &amp; Data Management</span></li><li><svg class="tick" aria-hidden="true"><use href="#i-tick"/></svg><span>CRM Administration &amp; Management (Keap)</span></li><li><svg class="tick" aria-hidden="true"><use href="#i-tick"/></svg><span>Digital Marketing &amp; Campaign Execution</span></li><li><svg class="tick" aria-hidden="true"><use href="#i-tick"/></svg><span>HR Administration &amp; Compliance Support</span></li><li><svg class="tick" aria-hidden="true"><use href="#i-tick"/></svg><span>Google Workspace &amp; Cloud Admin</span></li><li><svg class="tick" aria-hidden="true"><use href="#i-tick"/></svg><span>Agile &amp; Project Management Fundamentals</span></li></ul></div></div>
+</section>
+
+<section id="creatives" aria-labelledby="creatives-h">
+<h2 class="bar" id="creatives-h">Marketing creatives</h2>
+<p class="intro note">Lead magnets, landing pages and social posts. Open an entry to view the asset as a client would see it.</p>
+<ul class="cells">
+<li class="cell"><a class="cell-link media" href="assets/img/chido-taco-night-1080.webp" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="assets/img/chido-taco-night-400.webp" srcset="assets/img/chido-taco-night-400.webp 400w, assets/img/chido-taco-night-800.webp 800w" sizes="(min-width: 68rem) 300px, (min-width: 52rem) 33vw, 50vw" width="400" height="496" alt="" loading="lazy" decoding="async"></a><div class="cell-body"><h3 class="cell-title"><a href="assets/img/chido-taco-night-1080.webp" target="_blank" rel="noopener noreferrer">Chido Cafe — Taco Night<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a></h3><p class="kind">Instagram Post · Concept</p><p class="tools">Canva</p></div></li>
+<li class="cell"><a class="cell-link media" href="assets/img/dalareich-bean-to-bar-1080.webp" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="assets/img/dalareich-bean-to-bar-400.webp" srcset="assets/img/dalareich-bean-to-bar-400.webp 400w, assets/img/dalareich-bean-to-bar-800.webp 800w" sizes="(min-width: 68rem) 300px, (min-width: 52rem) 33vw, 50vw" width="400" height="496" alt="" loading="lazy" decoding="async"></a><div class="cell-body"><h3 class="cell-title"><a href="assets/img/dalareich-bean-to-bar-1080.webp" target="_blank" rel="noopener noreferrer">Dalareich — Bean to Bar<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a></h3><p class="kind">Instagram Post · Concept</p><p class="tools">Canva</p></div></li>
+<li class="cell"><a class="cell-link media" href="assets/img/metroland-four-stops-1080.webp" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="assets/img/metroland-four-stops-400.webp" srcset="assets/img/metroland-four-stops-400.webp 400w, assets/img/metroland-four-stops-800.webp 800w" sizes="(min-width: 68rem) 300px, (min-width: 52rem) 33vw, 50vw" width="400" height="496" alt="" loading="lazy" decoding="async"></a><div class="cell-body"><h3 class="cell-title"><a href="assets/img/metroland-four-stops-1080.webp" target="_blank" rel="noopener noreferrer">Metroland — Four Stops, One Day<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a></h3><p class="kind">Instagram Post · Concept</p><p class="tools">Canva</p></div></li>
+<li class="cell"><div class="media"><video controls playsinline muted preload="none" data-poster="assets/img/poster-chido-600.webp" width="600" height="750" aria-label="Chido Cafe — Taco Night cut"><source src="assets/videos/chido.mp4" type="video/mp4"></video></div><div class="cell-body"><h3 class="cell-title"><a href="assets/videos/chido.mp4" target="_blank" rel="noopener noreferrer">Chido Cafe — Taco Night cut<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a></h3><p class="kind">Instagram Reel · Concept</p><p class="tools">Stock Footage · FFmpeg Edit</p></div></li>
+<li class="cell"><div class="media"><video controls playsinline muted preload="none" data-poster="assets/img/poster-dalareich-600.webp" width="600" height="750" aria-label="Dalareich — Bean to Bar cut"><source src="assets/videos/dalareich.mp4" type="video/mp4"></video></div><div class="cell-body"><h3 class="cell-title"><a href="assets/videos/dalareich.mp4" target="_blank" rel="noopener noreferrer">Dalareich — Bean to Bar cut<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a></h3><p class="kind">Instagram Reel · Concept</p><p class="tools">Stock Footage · FFmpeg Edit</p></div></li>
+<li class="cell"><div class="media"><video controls playsinline muted preload="none" data-poster="assets/img/poster-metroland-600.webp" width="600" height="750" aria-label="Metroland — Four Stops cut"><source src="assets/videos/metroland.mp4" type="video/mp4"></video></div><div class="cell-body"><h3 class="cell-title"><a href="assets/videos/metroland.mp4" target="_blank" rel="noopener noreferrer">Metroland — Four Stops cut<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a></h3><p class="kind">Instagram Reel · Concept</p><p class="tools">Stock Footage · FFmpeg Edit</p></div></li>
+<li class="cell"><a class="cell-link media" href="assets/img/casa-2455-staycation-1080.webp" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="assets/img/casa-2455-staycation-400.webp" srcset="assets/img/casa-2455-staycation-400.webp 400w, assets/img/casa-2455-staycation-800.webp 800w" sizes="(min-width: 68rem) 300px, (min-width: 52rem) 33vw, 50vw" width="400" height="400" alt="" loading="lazy" decoding="async"></a><div class="cell-body"><h3 class="cell-title"><a href="assets/img/casa-2455-staycation-1080.webp" target="_blank" rel="noopener noreferrer">Casa 2455 — Staycation<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a></h3><p class="kind">Facebook Post · Concept</p><p class="tools">Canva</p></div></li>
+<li class="cell"><a class="cell-link media" href="assets/img/peanut-kisses-hills-1080.webp" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="assets/img/peanut-kisses-hills-400.webp" srcset="assets/img/peanut-kisses-hills-400.webp 400w, assets/img/peanut-kisses-hills-800.webp 800w" sizes="(min-width: 68rem) 300px, (min-width: 52rem) 33vw, 50vw" width="400" height="400" alt="" loading="lazy" decoding="async"></a><div class="cell-body"><h3 class="cell-title"><a href="assets/img/peanut-kisses-hills-1080.webp" target="_blank" rel="noopener noreferrer">Peanut Kisses — The Hills You Can Eat<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a></h3><p class="kind">Facebook Post · Concept</p><p class="tools">Canva</p></div></li>
+<li class="cell"><div class="media"><video controls playsinline muted preload="none" data-poster="assets/img/poster-casa-600.webp" width="600" height="600" aria-label="Casa 2455 — Staycation cut"><source src="assets/videos/casa.mp4" type="video/mp4"></video></div><div class="cell-body"><h3 class="cell-title"><a href="assets/videos/casa.mp4" target="_blank" rel="noopener noreferrer">Casa 2455 — Staycation cut<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a></h3><p class="kind">Facebook Video · Concept</p><p class="tools">Stock Footage · FFmpeg Edit</p></div></li>
+<li class="cell"><div class="media"><video controls playsinline muted preload="none" data-poster="assets/img/poster-peanut-600.webp" width="600" height="600" aria-label="Peanut Kisses — Hills cut"><source src="assets/videos/peanut.mp4" type="video/mp4"></video></div><div class="cell-body"><h3 class="cell-title"><a href="assets/videos/peanut.mp4" target="_blank" rel="noopener noreferrer">Peanut Kisses — Hills cut<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a></h3><p class="kind">Facebook Video · Concept</p><p class="tools">Stock Footage · FFmpeg Edit</p></div></li>
+<li class="cell"><a class="cell-link media" href="https://drive.google.com/file/d/14l-lliNpahpHTSRXKpLx66CrvfI4VhFO/view?usp=sharing" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="assets/img/lead-magnet-400.webp" srcset="assets/img/lead-magnet-400.webp 400w, assets/img/lead-magnet-800.webp 800w" sizes="(min-width: 68rem) 300px, (min-width: 52rem) 33vw, 50vw" width="400" height="400" alt="" loading="lazy" decoding="async"></a><div class="cell-body"><h3 class="cell-title"><a href="https://drive.google.com/file/d/14l-lliNpahpHTSRXKpLx66CrvfI4VhFO/view?usp=sharing" target="_blank" rel="noopener noreferrer">High-Converting Lead Magnet<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a></h3><p class="kind">Lead Magnet</p><p class="tools">Canva · AI:Grok</p></div></li>
+<li class="cell"><a class="cell-link media" href="landing/" tabindex="-1" aria-hidden="true"><img src="assets/img/landing-400.webp" srcset="assets/img/landing-400.webp 400w" sizes="(min-width: 68rem) 300px, (min-width: 52rem) 33vw, 50vw" width="400" height="366" alt="" loading="lazy" decoding="async"></a><div class="cell-body"><h3 class="cell-title"><a href="landing/">Gym Membership Landing Page</a></h3><p class="kind">Landing Page</p><p class="tools">Astro · Javascript · AI:Grok</p></div></li>
+<li class="cell"><a class="cell-link media" href="https://drive.google.com/file/d/1MLHLiOV6VQxASnlsX688Qjp-UxXE7tr6/view?usp=sharing" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="assets/img/testimonial-400.webp" srcset="assets/img/testimonial-400.webp 400w, assets/img/testimonial-800.webp 800w" sizes="(min-width: 68rem) 300px, (min-width: 52rem) 33vw, 50vw" width="400" height="400" alt="" loading="lazy" decoding="async"></a><div class="cell-body"><h3 class="cell-title"><a href="https://drive.google.com/file/d/1MLHLiOV6VQxASnlsX688Qjp-UxXE7tr6/view?usp=sharing" target="_blank" rel="noopener noreferrer">Client Testimonial<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a></h3><p class="kind">Social Media Post</p><p class="tools">Canva</p></div></li>
+<li class="cell"><a class="cell-link media" href="https://drive.google.com/drive/folders/1j_Ehm19tvR69vSvV1L9IvAPVDDTRtFsq?usp=sharing" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="assets/img/carousel-400.webp" srcset="assets/img/carousel-400.webp 400w, assets/img/carousel-800.webp 800w" sizes="(min-width: 68rem) 300px, (min-width: 52rem) 33vw, 50vw" width="400" height="400" alt="" loading="lazy" decoding="async"></a><div class="cell-body"><h3 class="cell-title"><a href="https://drive.google.com/drive/folders/1j_Ehm19tvR69vSvV1L9IvAPVDDTRtFsq?usp=sharing" target="_blank" rel="noopener noreferrer">Instagram Carousel<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a></h3><p class="kind">Social Media Post</p><p class="tools">Canva</p></div></li>
+<li class="cell"><a class="cell-link media" href="https://drive.google.com/file/d/1fYcQnOAEkww5JgqCM5FOqO79k5SfdApG/view?usp=sharing" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="assets/img/fitness-thumbnail-400.webp" srcset="assets/img/fitness-thumbnail-400.webp 400w" sizes="(min-width: 68rem) 300px, (min-width: 52rem) 33vw, 50vw" width="400" height="708" alt="" loading="lazy" decoding="async"></a><div class="cell-body"><h3 class="cell-title"><a href="https://drive.google.com/file/d/1fYcQnOAEkww5JgqCM5FOqO79k5SfdApG/view?usp=sharing" target="_blank" rel="noopener noreferrer">Instagram Reel<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a></h3><p class="kind">Social Media Video</p><p class="tools">Canva</p></div></li>
+<li class="cell"><a class="cell-link media" href="https://drive.google.com/file/d/1I2CEQD0Yneedtxhhercg880Mhcg8x5Ic/view?usp=sharing" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="assets/img/ballerina-400.webp" srcset="assets/img/ballerina-400.webp 400w" sizes="(min-width: 68rem) 300px, (min-width: 52rem) 33vw, 50vw" width="400" height="727" alt="" loading="lazy" decoding="async"></a><div class="cell-body"><h3 class="cell-title"><a href="https://drive.google.com/file/d/1I2CEQD0Yneedtxhhercg880Mhcg8x5Ic/view?usp=sharing" target="_blank" rel="noopener noreferrer">Instagram Reel<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a></h3><p class="kind">Social Media Video</p><p class="tools">Canva</p></div></li>
+<li class="cell"><a class="cell-link media" href="https://drive.google.com/file/d/1NA669ogItX2VomyU-VpUKtlDBSBqG0j9/view?usp=sharing" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="assets/img/birthday-400.webp" srcset="assets/img/birthday-400.webp 400w" sizes="(min-width: 68rem) 300px, (min-width: 52rem) 33vw, 50vw" width="400" height="709" alt="" loading="lazy" decoding="async"></a><div class="cell-body"><h3 class="cell-title"><a href="https://drive.google.com/file/d/1NA669ogItX2VomyU-VpUKtlDBSBqG0j9/view?usp=sharing" target="_blank" rel="noopener noreferrer">Facebook Reel<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a></h3><p class="kind">Social Media Video</p><p class="tools">Canva</p></div></li>
+</ul>
+</section>
+
+<section id="projects" aria-labelledby="projects-h">
+<h2 class="bar" id="projects-h">Projects</h2>
+<ul class="ledger">
+<li><h3>Recruitment Pipeline Dashboard</h3><div class="desc"><p>An applicant tracking system demo you can actually use: open a requisition, take applications through a public form (including a PDF resume upload), score resumes against the job description, then move candidates through a kanban pipeline with interview scheduling, decision notes and a full audit trail.</p></div><div class="meta"><div><p class="meta-label">Open</p><div class="links"><a href="https://hr-recruitment-pipeline.lackey43.duckdns.org/" target="_blank" rel="noopener noreferrer">View Dashboard Demo<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a><a href="https://hr-recruitment-pipeline.lackey43.duckdns.org/apply" target="_blank" rel="noopener noreferrer">View application form<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a></div></div><div><p class="meta-label">Built with</p><p class="stack">LangGraph · Python · FastAPI · Docker · PostgreSQL · Google Gemini API</p></div></div></li>
+<li><h3>Outreach Studio</h3><div class="desc"><p>An AI-powered outreach automation tool that researches businesses and generates personalized marketing emails in minutes. Simply provide a business website URL (or company information), and the assistant automatically analyzes the company&#x27;s online presence, identifies key insights, and creates a tailored outreach email. For demonstration purposes, the generated email is sent directly to the email address you provide, allowing you to review the final result exactly as a prospective client would receive it.</p></div><div class="meta"><div><p class="meta-label">Open</p><div class="links"><a href="https://marketing-ai-assistant.lackey43.duckdns.org/" target="_blank" rel="noopener noreferrer">View Chatbot Demo<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a></div></div><div><p class="meta-label">Built with</p><p class="stack">Deep Agents · Python · Streamlit · Docker · Email Automation · Web Search · PostgreSQL · Google Gemini API</p></div></div></li>
+<li><h3>LOTR RAG</h3><div class="desc"><p>A powerful RAG-powered AI chatbot that retrieves accurate information from uploaded documents. Demonstrated using the full Lord of the Rings book collection as the knowledge base. Ideal for customer support, internal knowledge bases, employee training, and domain-specific Q&amp;A systems.</p></div><div class="meta"><div><p class="meta-label">Open</p><div class="links"><a href="https://chatbot-with-rag.lackey43.duckdns.org/" target="_blank" rel="noopener noreferrer">View Chatbot Demo<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a></div></div><div><p class="meta-label">Built with</p><p class="stack">LangChain · Python · Streamlit · Retrieval-Augmented Generation · PostgreSQL · AI Embeddings</p></div></div></li>
+<li><h3>AI-Powered HR Applicant Screening System</h3><div class="desc"><p>An automated recruitment solution that streamlines the initial applicant screening process. Candidates submit their name, email, and resume through a simple form.</p><p>A self-hosted n8n workflow (running on Oracle Cloud via Docker) intelligently parses the resume using Google Gemini, extracts key information, and automatically updates a Google Sheets dashboard with a structured summary and an AI-generated suitability score (1–10) based on predefined job requirements.</p><p>This system significantly reduces manual HR workload, improves screening consistency, and enables faster, data-driven hiring decisions.</p></div><div class="meta"><div><p class="meta-label">Open</p><div class="links"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfkiwXcdt_egX2P9LNllo4Fx4tyQt15S-WauPWFTRPr8SU7qA/viewform" target="_blank" rel="noopener noreferrer">View Applicant Form<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a><a href="https://docs.google.com/spreadsheets/d/1yLAjgFScdBf5j-3_XqYWqsB6O7V6jH-N18ziLAlp66U/edit?usp=sharing" target="_blank" rel="noopener noreferrer">View Google Sheets<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a></div></div><div><p class="meta-label">Built with</p><p class="stack">n8n · Google Sheets · Docker · Google Gemini API</p></div></div></li>
+<li><h3>Resume Fit Analyzer</h3><div class="desc"><p>An AI-powered resume screening platform that automates candidate evaluation against job requirements. Users upload a resume and provide a target job description, and the system analyzes qualifications using an LLM to generate a compatibility score, identify key strengths and skill gaps, and deliver actionable recommendations. Built with LangGraph to orchestrate the evaluation workflow, providing recruiters with faster, more consistent, and data-driven hiring insights.</p></div><div class="meta"><div><p class="meta-label">Open</p><div class="links"><a href="https://ai-screening-system.lackey43.duckdns.org/" target="_blank" rel="noopener noreferrer">View Demo<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a></div></div><div><p class="meta-label">Built with</p><p class="stack">LangGraph · Streamlit · Docker · Google Gemini API</p></div></div></li>
+<li><h3>Trainee Directory Aggregation System</h3><div class="desc"><p>Developed a Google Apps Script automation that consolidates data from multiple Google Sheets into a single centralized directory. The solution automatically synchronizes records, eliminates manual copying, and ensures all downstream reports and tracking tools operate from a single source of truth.</p></div><div class="meta"><div><p class="meta-label">Open</p><div class="links"><a href="https://docs.google.com/spreadsheets/d/1J2etGF_7svanp9Xb_rmvJlS0rl4CcVSUnkS29Y0Y0Ac/edit?gid=2054165624#gid=2054165624" target="_blank" rel="noopener noreferrer">View Sheet<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a></div></div><div><p class="meta-label">Built with</p><p class="stack">Google Apps Script · Google Sheets · JavaScript</p></div></div></li>
+<li><h3>Trainee Directory Search Tool</h3><div class="desc"><p>Built a real-time search utility using advanced Google Sheets formulas that allows users to instantly locate trainee records by name or email. Designed to provide fast lookups from a centralized merged directory without requiring manual filtering.</p></div><div class="meta"><div><p class="meta-label">Open</p><div class="links"><a href="https://docs.google.com/spreadsheets/d/1J2etGF_7svanp9Xb_rmvJlS0rl4CcVSUnkS29Y0Y0Ac/edit?gid=1666440326#gid=1666440326" target="_blank" rel="noopener noreferrer">View Sheet<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a></div></div><div><p class="meta-label">Built with</p><p class="stack">XLOOKUP · Google Sheets · FILTER · QUERY · ARRAYFORMULA</p></div></div></li>
+<li><h3>Class Movement Tracking Dashboard</h3><div class="desc"><p>Created an automated movement tracking dashboard that monitors trainee progress across multiple classes using data generated by the centralized directory system. The dashboard provides instant visibility into trainee assignments and movement history while minimizing manual reporting.</p></div><div class="meta"><div><p class="meta-label">Open</p><div class="links"><a href="https://docs.google.com/spreadsheets/d/1J2etGF_7svanp9Xb_rmvJlS0rl4CcVSUnkS29Y0Y0Ac/edit?gid=706674810#gid=706674810&amp;range=F2" target="_blank" rel="noopener noreferrer">View Sheet<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a></div></div><div><p class="meta-label">Built with</p><p class="stack">Google Apps Script · Google Sheets · FILTER · QUERY · ARRAYFORMULA</p></div></div></li>
+<li><h3>Bulk Movement History Lookup Tool</h3><div class="desc"><p>Designed a batch lookup solution that accepts multiple trainee email addresses and automatically retrieves their movement history from the centralized directory. This significantly reduces repetitive manual searches and accelerates reporting workflows.</p></div><div class="meta"><div><p class="meta-label">Open</p><div class="links"><a href="https://docs.google.com/spreadsheets/d/1J2etGF_7svanp9Xb_rmvJlS0rl4CcVSUnkS29Y0Y0Ac/edit?gid=1162141073#gid=1162141073&amp;range=C1" target="_blank" rel="noopener noreferrer">View Sheet<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a></div></div><div><p class="meta-label">Built with</p><p class="stack">Google Apps Script · Google Sheets · FILTER · QUERY · ARRAYFORMULA</p></div></div></li>
+<li><h3>Batch Email Automation System</h3><div class="desc"><p>Developed a bulk email automation tool powered by Gmail API and Google Apps Script. Features reusable email templates, recipient management, and one-click batch delivery, enabling administrators to efficiently communicate with large groups of trainees.</p></div><div class="meta"><div><p class="meta-label">Open</p><div class="links"><a href="https://docs.google.com/spreadsheets/d/1J2etGF_7svanp9Xb_rmvJlS0rl4CcVSUnkS29Y0Y0Ac/edit?gid=1555198795#gid=1555198795&amp;range=C2" target="_blank" rel="noopener noreferrer">View Sheet<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a></div></div><div><p class="meta-label">Built with</p><p class="stack">Google Apps Script · Google Sheets · Gmail API</p></div></div></li>
+<li><h3>Training Management &amp; Performance Tracking System</h3><div class="desc"><p>Designed and developed a comprehensive Google Sheets-based training management system for Outsourced Doers (now Doneverse) to streamline trainee monitoring and reporting. The solution includes a centralized directory with summary views across all training sheets, automated attendance tracking powered by Google Apps Script, pop quiz score monitoring, trainee performance leaderboards, and a project tracking module that consolidates assessment results. By centralizing training data and automating reporting workflows, the system significantly improved visibility into trainee progress and reduced administrative effort.</p></div><div class="meta"><div><p class="meta-label">Open</p><div class="links"><a href="https://docs.google.com/spreadsheets/d/1UVphcCxmG-glGP7xMf-lDQ_QaIR5LFizQ4MXD4FGG8c/edit?gid=1134071999#gid=1134071999&amp;range=A2" target="_blank" rel="noopener noreferrer">View Sheet<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a></div></div><div><p class="meta-label">Built with</p><p class="stack">Google Apps Script · Google Sheets · JavaScript · Dashboard Design · Spreadsheet Automation</p></div></div></li>
+</ul>
+</section>
+
+<section id="experience" aria-labelledby="experience-h">
+<h2 class="bar" id="experience-h">Work experience</h2>
+<p class="intro note">Marketing, HR, banking and procurement, most recent first.</p>
+<table class="table">
+<thead><tr><th scope="col">Dates</th><th scope="col">Position</th><th scope="col">Company</th><th scope="col">Duties</th></tr></thead>
+<tbody>
+<tr><td class="dates" data-label="Dates">March 2025 – March 2026</td><td class="strong" data-label="Position">Digital Marketing Virtual Assistant</td><td data-label="Company">Outsourced Doers</td><td data-label="Duties"><ul><li>Automated marketing workflows using n8n</li><li>Streamlined repetitive business processes</li><li>Improved social media posting consistency</li></ul></td></tr>
+<tr><td class="dates" data-label="Dates">November 2023 – November 2024</td><td class="strong" data-label="Position">Human Resources Assistant</td><td data-label="Company">Qualfon</td><td data-label="Duties"><ul><li>Automated HR data entry using Python</li><li>Improved HR data accuracy and efficiency</li><li>Streamlined employee onboarding processes</li></ul></td></tr>
+<tr><td class="dates" data-label="Dates">September 2021 – February 2023</td><td class="strong" data-label="Position">Bank Teller</td><td data-label="Company">Asia United Bank</td><td data-label="Duties"><ul><li>Processed high-volume bank transactions</li><li>Ensured transaction accuracy and compliance</li><li>Balanced daily cash operations</li></ul></td></tr>
+<tr><td class="dates" data-label="Dates">August 2020 – January 2021</td><td class="strong" data-label="Position">Human Resources Department Aide</td><td data-label="Company">LEYECO V</td><td data-label="Duties"><ul><li>Maintained accurate HR records</li><li>Processed health clearances during COVID-19</li><li>Supported daily HR administrative operations</li></ul></td></tr>
+<tr><td class="dates" data-label="Dates">July 2019 – June 2020</td><td class="strong" data-label="Position">Procurement Officer</td><td data-label="Company">KEITECH Educational Foundation, Inc.</td><td data-label="Duties"><ul><li>Improved inventory tracking accuracy.</li><li>Supported cost-effective purchasing.</li><li>Maintained uninterrupted supply availability.</li></ul></td></tr>
+</tbody>
+</table>
+</section>
+
+<section id="education" aria-labelledby="education-h">
+<h2 class="bar" id="education-h">Education</h2>
+<table class="table">
+<thead><tr><th scope="col">Period</th><th scope="col">School</th><th scope="col">Degree</th><th scope="col">Notes</th></tr></thead>
+<tbody>
+<tr><td class="dates" data-label="Period">July 2016 – April 2019</td><td class="strong" data-label="School">St. Peter&#x27;s College of Ormoc</td><td data-label="Degree">Bachelor of Science in Business Administration</td><td data-label="Notes"><ul><li>Major in Human Resource Development Management</li></ul></td></tr>
+</tbody>
+</table>
+</section>
+
+<section id="certificates" aria-labelledby="certificates-h">
+<h2 class="bar" id="certificates-h">Certificates</h2>
+<p class="intro note">Open any entry for the certificate or its source file.</p>
+<ul class="cells certs">
+<li class="cell"><a class="cert-media" href="https://academy.langchain.com/certificates/is2wwkufja" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="assets/img/cert-langgraph-400.webp" srcset="assets/img/cert-langgraph-400.webp 400w, assets/img/cert-langgraph-800.webp 800w" sizes="(min-width: 52rem) 400px, (min-width: 40rem) 50vw, 100vw" width="400" height="283" alt="" loading="lazy" decoding="async"></a><div class="cell-body"><h3 class="cell-title"><a href="https://academy.langchain.com/certificates/is2wwkufja" target="_blank" rel="noopener noreferrer">LangGraph – Python<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a></h3><p class="kind">LangChain Academy</p><p class="tools">June 2026</p></div></li>
+<li class="cell"><a class="cert-media" href="https://academy.langchain.com/certificates/82s1v5yebv" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="assets/img/cert-langchain-400.webp" srcset="assets/img/cert-langchain-400.webp 400w, assets/img/cert-langchain-800.webp 800w" sizes="(min-width: 52rem) 400px, (min-width: 40rem) 50vw, 100vw" width="400" height="283" alt="" loading="lazy" decoding="async"></a><div class="cell-body"><h3 class="cell-title"><a href="https://academy.langchain.com/certificates/82s1v5yebv" target="_blank" rel="noopener noreferrer">LangChain – Python<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a></h3><p class="kind">LangChain Academy</p><p class="tools">June 2026</p></div></li>
+<li class="cell"><a class="cert-media" href="https://academy.langchain.com/certificates/81fsps1yrc" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="assets/img/cert-deepagents-400.webp" srcset="assets/img/cert-deepagents-400.webp 400w, assets/img/cert-deepagents-800.webp 800w" sizes="(min-width: 52rem) 400px, (min-width: 40rem) 50vw, 100vw" width="400" height="283" alt="" loading="lazy" decoding="async"></a><div class="cell-body"><h3 class="cell-title"><a href="https://academy.langchain.com/certificates/81fsps1yrc" target="_blank" rel="noopener noreferrer">Deep Agents<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a></h3><p class="kind">LangChain Academy</p><p class="tools">July 2026</p></div></li>
+<li class="cell"><a class="cert-media" href="https://drive.google.com/file/d/1PE71nnnq_YrvmHUBWOac6xnKDtPI9Gdk/view?usp=sharing" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="assets/img/cert-udemy-400.webp" srcset="assets/img/cert-udemy-400.webp 400w, assets/img/cert-udemy-800.webp 800w" sizes="(min-width: 52rem) 400px, (min-width: 40rem) 50vw, 100vw" width="400" height="298" alt="" loading="lazy" decoding="async"></a><div class="cell-body"><h3 class="cell-title"><a href="https://drive.google.com/file/d/1PE71nnnq_YrvmHUBWOac6xnKDtPI9Gdk/view?usp=sharing" target="_blank" rel="noopener noreferrer">Complete Python Bootcamp<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a></h3><p class="kind">Udemy</p><p class="tools">August 2020</p></div></li>
+<li class="cell"><a class="cert-media" href="assets/img/cert-zsecurity-800.webp" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="assets/img/cert-zsecurity-400.webp" srcset="assets/img/cert-zsecurity-400.webp 400w, assets/img/cert-zsecurity-800.webp 800w" sizes="(min-width: 52rem) 400px, (min-width: 40rem) 50vw, 100vw" width="400" height="309" alt="" loading="lazy" decoding="async"></a><div class="cell-body"><h3 class="cell-title"><a href="assets/img/cert-zsecurity-800.webp" target="_blank" rel="noopener noreferrer">Cybersecurity<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a></h3><p class="kind">Zsecurity</p><p class="tools">May 2020</p></div></li>
+<li class="cell"><a class="cert-media" href="https://www.coursera.org/account/accomplishments/verify/R1HUNUCV3KVG" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="assets/img/cert-ibm-software-engineering-400.webp" srcset="assets/img/cert-ibm-software-engineering-400.webp 400w, assets/img/cert-ibm-software-engineering-800.webp 800w" sizes="(min-width: 52rem) 400px, (min-width: 40rem) 50vw, 100vw" width="400" height="209" alt="" loading="lazy" decoding="async"></a><div class="cell-body"><h3 class="cell-title"><a href="https://www.coursera.org/account/accomplishments/verify/R1HUNUCV3KVG" target="_blank" rel="noopener noreferrer">Software Engineering<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a></h3><p class="kind">IBM</p><p class="tools">July 2025</p></div></li>
+<li class="cell"><a class="cert-media" href="https://www.coursera.org/account/accomplishments/verify/NKMTPH4ZAO5I" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="assets/img/cert-ibm-agile-scrum-400.webp" srcset="assets/img/cert-ibm-agile-scrum-400.webp 400w, assets/img/cert-ibm-agile-scrum-800.webp 800w" sizes="(min-width: 52rem) 400px, (min-width: 40rem) 50vw, 100vw" width="400" height="209" alt="" loading="lazy" decoding="async"></a><div class="cell-body"><h3 class="cell-title"><a href="https://www.coursera.org/account/accomplishments/verify/NKMTPH4ZAO5I" target="_blank" rel="noopener noreferrer">Agile Development and Scrum<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a></h3><p class="kind">IBM</p><p class="tools">July 2025</p></div></li>
+<li class="cell"><a class="cert-media" href="https://www.coursera.org/account/accomplishments/verify/C8ZRIJSZ2RLX" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="assets/img/cert-ibm-cloud-computing-400.webp" srcset="assets/img/cert-ibm-cloud-computing-400.webp 400w, assets/img/cert-ibm-cloud-computing-800.webp 800w" sizes="(min-width: 52rem) 400px, (min-width: 40rem) 50vw, 100vw" width="400" height="209" alt="" loading="lazy" decoding="async"></a><div class="cell-body"><h3 class="cell-title"><a href="https://www.coursera.org/account/accomplishments/verify/C8ZRIJSZ2RLX" target="_blank" rel="noopener noreferrer">Cloud Computing<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a></h3><p class="kind">IBM</p><p class="tools">July 2025</p></div></li>
+<li class="cell"><a class="cert-media" href="https://www.coursera.org/account/accomplishments/verify/WH57YOSQKR3A" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="assets/img/cert-ibm-devops-400.webp" srcset="assets/img/cert-ibm-devops-400.webp 400w, assets/img/cert-ibm-devops-800.webp 800w" sizes="(min-width: 52rem) 400px, (min-width: 40rem) 50vw, 100vw" width="400" height="209" alt="" loading="lazy" decoding="async"></a><div class="cell-body"><h3 class="cell-title"><a href="https://www.coursera.org/account/accomplishments/verify/WH57YOSQKR3A" target="_blank" rel="noopener noreferrer">DevOps<svg class="ext" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only"> (opens in a new tab)</span></a></h3><p class="kind">IBM</p><p class="tools">July 2025</p></div></li>
+</ul>
+</section>
+
+<section id="contact" class="contact" aria-labelledby="contact-h">
+<h2 class="bar" id="contact-h">Let’s work together</h2>
+<div class="row"><p class="label">Get in touch</p><div class="entry">
+<p class="contact-lede">Hiring for a role, or need something automated? Email me and we can talk about what it would take.</p>
+<div class="actions">
+<a class="btn btn-primary" href="mailto:claude_daigan@protonmail.com"><svg aria-hidden="true"><use href="#i-mail"/></svg>Email me</a>
+<a class="btn btn-plain" href="https://linkedin.com/in/claude-lester-d-a84558288/" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#i-in"/></svg>LinkedIn<span class="sr-only"> (opens in a new tab)</span></a>
+<span class="addr">claude_daigan@protonmail.com</span>
+</div>
+</div></div>
+</section>
+</main>
+<footer class="foot">
+<span>© <span id="year">2026</span> Claude Daigan. All rights reserved.</span>
+<a href="#main">Back to top<svg aria-hidden="true"><use href="#i-up"/></svg></a>
+</footer>
+</div>
+<script>
+document.getElementById("year").textContent=new Date().getFullYear();
+var vids=document.querySelectorAll("video[data-poster]");function setPoster(v){v.poster=v.dataset.poster;v.removeAttribute("data-poster")}if("IntersectionObserver"in window){var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){setPoster(en.target);io.unobserve(en.target)}})},{rootMargin:"600px 0px"});vids.forEach(function(v){io.observe(v)})}else{vids.forEach(setPoster)}
+document.addEventListener("play",function(e){document.querySelectorAll("video").forEach(function(v){if(v!==e.target)v.pause()})},true);
+</script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+include:
+  - _astro
+exclude:
+  - PRODUCT.md
+  - DESIGN.md
+  - styles.css
+  - tools/
+  - README.md

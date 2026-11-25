@@ -1,0 +1,290 @@
+{
+ "schemaVersion": 2,
+ "generatedAt": "2026-11-25T20:22:21.419560Z",
+ "title": "Design System: Claude Daigan Portfolio",
+ "extensions": {
+  "colorMeta": {
+   "form-green": {
+    "role": "primary",
+    "displayName": "Form Green",
+    "canonical": "#0e4a36",
+    "tonalRamp": [
+     "#17352b",
+     "#215e4a",
+     "#278b6a",
+     "#29bc8b",
+     "#52d6aa",
+     "#8bdac0",
+     "#bee4d8",
+     "#eef6f4"
+    ]
+   },
+   "form-green-deep": {
+    "role": "primary",
+    "displayName": "Deep Form Green",
+    "canonical": "#093526",
+    "tonalRamp": [
+     "#17362b",
+     "#205f4a",
+     "#258d6a",
+     "#26bf8b",
+     "#4fd9aa",
+     "#89dcc0",
+     "#bde5d7",
+     "#eef6f4"
+    ]
+   },
+   "form-green-soft": {
+    "role": "primary",
+    "displayName": "Soft Form Green",
+    "canonical": "#2c5c49",
+    "tonalRamp": [
+     "#1e2e28",
+     "#305043",
+     "#3f735f",
+     "#4d997b",
+     "#72b69b",
+     "#9ec7b7",
+     "#c7dbd3",
+     "#f0f4f3"
+    ]
+   },
+   "stamp-vermilion": {
+    "role": "secondary",
+    "displayName": "Stamp Vermilion",
+    "canonical": "#b8301b",
+    "tonalRamp": [
+     "#371a16",
+     "#61271f",
+     "#903123",
+     "#c33822",
+     "#dc5f4c",
+     "#de9387",
+     "#e6c2bc",
+     "#f7efee"
+    ]
+   },
+   "form-paper": {
+    "role": "neutral",
+    "displayName": "Form Paper",
+    "canonical": "#f1f5ef",
+    "tonalRamp": [
+     "#252b21",
+     "#3c4a35",
+     "#546a48",
+     "#6a8c5a",
+     "#8caa7e",
+     "#aec0a5",
+     "#cfd8cb",
+     "#f2f4f1"
+    ]
+   },
+   "label-tint": {
+    "role": "neutral",
+    "displayName": "Label Tint",
+    "canonical": "#dfe9dc",
+    "tonalRamp": [
+     "#242b21",
+     "#3a4a36",
+     "#506a49",
+     "#668b5a",
+     "#88aa7e",
+     "#abc0a5",
+     "#ced8cb",
+     "#f2f4f1"
+    ]
+   },
+   "desk": {
+    "role": "neutral",
+    "displayName": "Desk",
+    "canonical": "#d9e3d6",
+    "tonalRamp": [
+     "#242a22",
+     "#3b4837",
+     "#52674b",
+     "#68875e",
+     "#8aa682",
+     "#adbda8",
+     "#ced6cc",
+     "#f2f3f1"
+    ]
+   },
+   "entry-ink": {
+    "role": "neutral",
+    "displayName": "Entry Ink",
+    "canonical": "#15191f",
+    "tonalRamp": [
+     "#22252b",
+     "#373e48",
+     "#4b5667",
+     "#5e6f87",
+     "#8190a7",
+     "#a7b0be",
+     "#ccd0d7",
+     "#f1f2f3"
+    ]
+   },
+   "entry-ink-soft": {
+    "role": "neutral",
+    "displayName": "Soft Entry Ink",
+    "canonical": "#39424b",
+    "tonalRamp": [
+     "#232629",
+     "#3a4046",
+     "#4f5963",
+     "#647381",
+     "#8794a1",
+     "#abb2ba",
+     "#cdd1d5",
+     "#f1f2f3"
+    ]
+   }
+  },
+  "typographyMeta": {
+   "display": {
+    "displayName": "Name comb",
+    "purpose": "The h1 name, one letter per comb box."
+   },
+   "headline": {
+    "displayName": "Section bar",
+    "purpose": "Uppercase Narrow headings on solid green bars."
+   },
+   "title": {
+    "displayName": "Entry title",
+    "purpose": "Position title, project names, creative and certificate titles."
+   },
+   "body": {
+    "displayName": "Entry body",
+    "purpose": "Summaries and descriptions, max 60ch."
+   },
+   "label": {
+    "displayName": "Printed label",
+    "purpose": "Field labels, table headers, meta labels."
+   }
+  },
+  "shadows": [],
+  "motion": [
+   {
+    "name": "ease-out-expo",
+    "value": "cubic-bezier(.16, 1, .3, 1)",
+    "purpose": "180-200ms colour/opacity transitions on buttons and image links. No entrance animations."
+   }
+  ],
+  "breakpoints": [
+   {
+    "name": "wide",
+    "value": "68rem"
+   },
+   {
+    "name": "tablet",
+    "value": "52rem"
+   },
+   {
+    "name": "phone",
+    "value": "40rem"
+   }
+  ]
+ },
+ "components": [
+  {
+   "name": "Primary Button",
+   "kind": "button",
+   "refersTo": "button-primary",
+   "description": "Email me: the one primary action.",
+   "html": "<a class=\"ds-btn-primary\" href=\"#\"><svg viewBox=\"0 0 20 20\" width=\"18\" height=\"18\" aria-hidden=\"true\"><rect x=\"2\" y=\"4\" width=\"16\" height=\"12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M2.8 5l7.2 6 7.2-6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"/></svg>Email me</a>",
+   "css": ".ds-btn-primary{display:inline-flex;align-items:center;gap:.55rem;min-height:3rem;padding:.7rem 1.25rem;font:700 1.0625rem/1 Archivo,Arial,sans-serif;text-decoration:none;background:#0e4a36;color:#f1f5ef;border:2px solid #0e4a36;border-radius:0;transition:background-color .18s cubic-bezier(.16,1,.3,1)}.ds-btn-primary:hover{background:#093526;border-color:#093526}.ds-btn-primary:focus-visible{outline:3px solid #b8301b;outline-offset:2px}"
+  },
+  {
+   "name": "Plain Button",
+   "kind": "button",
+   "refersTo": "button-plain",
+   "description": "Secondary action (LinkedIn).",
+   "html": "<a class=\"ds-btn-plain\" href=\"#\">LinkedIn</a>",
+   "css": ".ds-btn-plain{display:inline-flex;align-items:center;min-height:3rem;padding:.7rem 1.25rem;font:700 1.0625rem/1 Archivo,Arial,sans-serif;text-decoration:none;background:transparent;color:#0e4a36;border:2px solid #0e4a36;border-radius:0;transition:background-color .18s cubic-bezier(.16,1,.3,1)}.ds-btn-plain:hover{background:#dfe9dc}.ds-btn-plain:focus-visible{outline:3px solid #b8301b;outline-offset:2px}"
+  },
+  {
+   "name": "Section Bar",
+   "kind": "custom",
+   "refersTo": "section-bar",
+   "description": "Solid green band that opens every section.",
+   "html": "<h2 class=\"ds-bar\">Work experience</h2>",
+   "css": ".ds-bar{margin:0;background:#0e4a36;color:#f1f5ef;font:700 1.5rem/1.2 'Archivo Narrow','Arial Narrow',sans-serif;text-transform:uppercase;letter-spacing:.05em;padding:.7rem 1.5rem .65rem}"
+  },
+  {
+   "name": "Field Row",
+   "kind": "custom",
+   "refersTo": "field-label",
+   "description": "Tinted label column beside a filled-in entry.",
+   "html": "<div class=\"ds-row\"><p class=\"ds-label\">Position</p><p class=\"ds-entry\">Operations &amp; Automation Specialist</p></div>",
+   "css": ".ds-row{display:grid;grid-template-columns:11rem 1fr;border:1px solid #0e4a36;background:#f1f5ef}.ds-label{margin:0;background:#dfe9dc;border-right:1px solid #0e4a36;padding:.85rem 1rem;font:700 .8125rem/1.3 'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:.05em;color:#0e4a36}.ds-entry{margin:0;padding:.85rem 1.5rem;font:600 1.25rem/1.25 Archivo,Arial,sans-serif;color:#15191f}"
+  },
+  {
+   "name": "Name Comb",
+   "kind": "custom",
+   "description": "Signature: letters typed one per box, trailing boxes left empty.",
+   "html": "<div class=\"ds-comb\"><span>C</span><span>L</span><span>A</span><span>U</span><span>D</span><span>E</span><span></span><span></span></div>",
+   "css": ".ds-comb{display:flex;border:1px solid #0e4a36;background:#f1f5ef;width:max-content}.ds-comb span{width:3.5rem;height:3.5rem;display:grid;place-items:center;border-right:1px solid #0e4a36;font:800 2.25rem/1 Archivo,Arial,sans-serif;color:#15191f}.ds-comb span:last-child{border-right:0}"
+  },
+  {
+   "name": "Status Stamp",
+   "kind": "chip",
+   "refersTo": "status-stamp",
+   "description": "Signature: one vermilion rubber stamp per page.",
+   "html": "<span class=\"ds-stamp\">Available</span>",
+   "css": ".ds-stamp{display:inline-block;font:800 1.25rem/1 Archivo,Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em;color:#b8301b;border:3px solid #b8301b;padding:.45rem .7rem .4rem;transform:rotate(-4deg)}"
+  },
+  {
+   "name": "Masthead Navigation",
+   "kind": "nav",
+   "description": "Narrow links beside the printed form title.",
+   "html": "<nav class=\"ds-nav\"><a href=\"#\">About</a><a href=\"#\">Creatives</a><a href=\"#\">Projects</a><a href=\"#\">Contact</a></nav>",
+   "css": ".ds-nav{display:flex;gap:1.25rem}.ds-nav a{font:600 1rem/1.2 'Archivo Narrow',sans-serif;color:#0e4a36;text-decoration:none;padding:.35rem 0;border-bottom:2px solid transparent}.ds-nav a:hover{border-bottom-color:#0e4a36}.ds-nav a:focus-visible{outline:3px solid #b8301b;outline-offset:2px}"
+  }
+ ],
+ "narrative": {
+  "northStar": "The Filled-In Record",
+  "overview": "The page is one printed form, a Philippine-style personal data sheet, already completed by its owner. Every recruiter and HR person has typed into a sheet like this; here the boxes hold his work instead of blanks. The printed parts of the form (rules, field-label column, solid section bars) are one deep green ink on pale security-green paper; everything he \"filled in\" is near-black. One vermilion rubber stamp marks his status.\n\nDensity is a form's density: tight label/entry rows, hairline rules between every field, no floating cards, no decoration that a print shop would not have set. Expression comes from the name typed letter by letter into comb boxes at poster scale, the passport-photo box, and the stamp. The previous Tailwind look (white, blue accent, rounded cards, dot grid) and the marketing site's Messenger/navy-gold world are rejected for this surface.",
+  "keyCharacteristics": [
+   "One sheet on a desk: a bordered paper panel centred on a slightly darker green field.",
+   "Printed vs. filled: green for the form, near-black for his entries.",
+   "Square everything: 0 radius, 1px and 2px ink rules, no shadows.",
+   "Labels sit in a tinted left column, never as eyebrows above headings.",
+   "State is a mark: ticked boxes, a rubber stamp, an arrow-out glyph on links that leave the page."
+  ],
+  "rules": [
+   {
+    "name": "The Printed vs. Filled Rule",
+    "body": "Green is for what the form prints; near-black is for what he wrote. Never set his content in green or the form's furniture in black.",
+    "section": "colors"
+   },
+   {
+    "name": "The One Stamp Rule",
+    "body": "Vermilion appears once per screen at most, as a stamp or a focus ring. It is never a fill, a link colour or a decoration.",
+    "section": "colors"
+   },
+   {
+    "name": "The Two Widths Rule",
+    "body": "Narrow is only ever printed furniture; regular width is only ever content. Do not set entries in Narrow caps.",
+    "section": "typography"
+   },
+   {
+    "name": "The Whole Cells Rule",
+    "body": "Comb boxes and grid cells never render fractionally: the comb uses auto-fill tracks and hides overflow rows, and empty trailing grid slots stay blank paper.",
+    "section": "layout"
+   }
+  ],
+  "dos": [
+   "Do put every new block on the label column grid with a 1px ink rule below it.",
+   "Do keep the name comb as the largest element in the first viewport.",
+   "Do mark links that leave the page with the arrow-out icon and \"(opens in a new tab)\" text for screen readers.",
+   "Do keep all URLs relative; the page lives under /portfolio/."
+  ],
+  "donts": [
+   "Don't add rounded cards, shadows, gradients or a second accent colour.",
+   "Don't put a kicker or eyebrow above a heading; labels live in the left column.",
+   "Don't use vermilion for anything except the status stamp and focus ring.",
+   "Don't reuse the marketing site's Messenger-thread or navy-and-gold look, or link to the marketing site.",
+   "Don't add autoplaying media or entrance animations."
+  ]
+ }
+}
