@@ -75,6 +75,19 @@ components:
   status-stamp:
     textColor: "{colors.stamp-vermilion}"
     padding: "0.45rem 0.7rem"
+  play-button:
+    backgroundColor: "{colors.form-paper}"
+    textColor: "{colors.form-green}"
+    rounded: "{rounded.none}"
+    size: "3.5rem"
+  play-button-hover:
+    backgroundColor: "{colors.label-tint}"
+  na-cell:
+    backgroundColor: "{colors.form-paper}"
+    textColor: "{colors.entry-ink}"
+  signature-row:
+    backgroundColor: "{colors.form-paper}"
+    textColor: "{colors.entry-ink}"
 ---
 
 # Design System: Claude Daigan Portfolio
@@ -126,7 +139,7 @@ One ink, one paper, one stamp: a committed green form with near-black entries an
 **Character:** A plain grotesk of the kind form printers use, at two widths: Narrow caps are the printed form, regular Archivo is the hand that filled it in. Both self-hosted variable WOFF2 (latin subset), preloaded.
 
 ### Hierarchy
-- **Display** (800, 0.64 x comb box, line-height 1): the name, one letter per comb box. Box size clamp(2.6rem, 7.4vw, 7rem) on desktop; on phones the six boxes fill the entry column exactly.
+- **Display** (800, 0.64 x comb box, line-height 1): the name, one letter per comb box. Box size clamp(2.6rem, 7.4vw, 7rem) on desktop; on phones the six boxes fill the entry column exactly. Tracks are `repeat(auto-fill, minmax(var(--box), 1fr))` and each box is `aspect-ratio: 1`, so the row is always filled by whole square boxes.
 - **Headline** (Narrow 700, uppercase, clamp(1.25rem, 1.1rem + 0.8vw, 1.75rem), 0.05em tracking): section bars.
 - **Title** (600-700, 1.0625-2rem): position title in the hero, project names, creative and certificate titles.
 - **Body** (400, 1.0625rem / 1.55): summaries and descriptions, capped at 60ch.
@@ -139,7 +152,7 @@ One ink, one paper, one stamp: a committed green form with near-black entries an
 
 A single sheet, max-width 78rem, centred with a 2px ink border on wide screens and edge-to-edge on phones. Inside, every section is a solid green bar followed by field rows on one label column (11rem desktop, 8.5rem tablet, 5.75rem phone) plus an entry column. Grids of entries (creatives, certificates) are true cell grids with 1px ink lines (4/3/2 columns for creatives, 3/2/1 for certificates) and reflow by whole cells. Projects are a ledger: name cell, description, and an "Open / Built with" column, collapsing to stacked rows on phones. Experience and education are real tables that become labelled stacked records under 40rem. Breakpoints: 68rem, 52rem, 40rem.
 
-**The Whole Cells Rule.** Comb boxes and grid cells never render fractionally: the comb uses auto-fill tracks and hides overflow rows, and empty trailing grid slots stay blank paper.
+**The Whole Cells Rule.** Comb boxes and grid cells never render fractionally: the comb uses auto-fill minmax(box, 1fr) tracks with square boxes and clips spare rows (the neighbouring rule closes the row, so no doubled line), and the leftover slots of an entry grid's last row are one N/A cell, never unruled holes.
 
 ## Elevation & Depth
 
@@ -147,7 +160,7 @@ Flat. There are no shadows anywhere; depth comes from the sheet sitting on a dar
 
 ## Shapes
 
-Square corners throughout (0px). Borders are ink rules: 2px for the sheet edge, masthead and footer, 1px between fields and cells. The only rotated element is the status stamp (-4deg) with a 3px vermilion border.
+Square corners throughout (0px). Borders are ink rules: 2px for the sheet edge, masthead and footer, 1px between fields and cells. The only rotated element is the status stamp (-4deg) with a 3px vermilion border. The only filter is the stamp's ink filter.
 
 ## Components
 
@@ -167,10 +180,19 @@ Tinted label cell on the left, entry on the right, 1px rule below. On phones, la
 The h1: "First name" and "Surname" label cells beside letter-per-box combs, followed by empty boxes as a real form would leave them. Screen readers get the plain name from visually hidden text; the comb is aria-hidden.
 
 ### Status Stamp (signature)
-Vermilion uppercase "Available" in a 3px vermilion frame, rotated -4deg. One per page.
+Vermilion uppercase "Available" in a 3px vermilion frame, rotated -4deg. One per page. It reads as rubber ink through the inline SVG filter `#ink` (feTurbulence fractalNoise, baseFrequency .9, 2 octaves, into feDisplacementMap scale 2.5) applied with `filter: url(#ink)`, plus `mix-blend-mode: multiply` and opacity .92. The word stays a real text element; large bold text keeps contrast above 3:1.
 
 ### Entry Cell
-Media on top (4:5 cover for creatives, 16:10 contain on label-tint for certificates), then title link, kind in Narrow green, tools in soft ink. Videos use native controls, muted, preload none, posters assigned as they near the viewport.
+Media on top (4:5 cover for creatives, 16:10 contain on label-tint for certificates), then title link, kind in Narrow green, tools in soft ink. Any creative whose source is not 4:5 (square posts and cuts, the landing-page shot, 9:16 reels) carries class `fit`: `object-fit: contain` on label-tint, so headlines are never cropped. Videos ship with a real `poster`, muted, playsinline, preload none and no native controls until played.
+
+### Video Play Button
+A 3.5rem paper square with a 2px ink rule and a drawn triangle, centred on the poster, `aria-label="Play <title>"`. Click sets `controls`, calls `play()`, removes the button and moves focus to the video. Hover tints to label-tint. Only one video plays at a time.
+
+### N/A Cell
+The form's convention for a field with nothing to enter: a ruled cell with a 1px soft-ink diagonal strike (inline SVG, non-scaling stroke) and "N/A" in bold entry ink on a paper patch. It closes the last row of an entry grid, spanning the leftover columns: creatives (17) span 3 / 1 / 1 at 4 / 3 / 2 columns; certificates (9) show only at 2 columns (span 1) and are hidden at 3 and 1. aria-hidden. Recompute the spans when item counts change.
+
+### Signature Row
+The form closes with a final contact row: "Signature" label and the typed name "Claude Lester Daigan" in regular Archivo 600 above a 1px ink rule, then a "Date accomplished" label and "2026". Labels are bottom-aligned like a sign-here line; on phones every label becomes a strip above its entry. Never a handwriting font.
 
 ### Navigation
 A row of Narrow links in the masthead beside the "Portfolio record" form title; underline in ink on hover. Wraps to two lines on phones.

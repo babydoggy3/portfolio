@@ -1,6 +1,6 @@
 {
  "schemaVersion": 2,
- "generatedAt": "2026-11-25T20:22:21.419560Z",
+ "generatedAt": "2026-11-25T20:34:41.967463Z",
  "title": "Design System: Claude Daigan Portfolio",
  "extensions": {
   "colorMeta": {
@@ -221,7 +221,7 @@
   {
    "name": "Name Comb",
    "kind": "custom",
-   "description": "Signature: letters typed one per box, trailing boxes left empty.",
+   "description": "Signature: letters typed one per square box, trailing boxes left empty; auto-fill minmax(box,1fr) tracks fill the row exactly, spare rows clipped.",
    "html": "<div class=\"ds-comb\"><span>C</span><span>L</span><span>A</span><span>U</span><span>D</span><span>E</span><span></span><span></span></div>",
    "css": ".ds-comb{display:flex;border:1px solid #0e4a36;background:#f1f5ef;width:max-content}.ds-comb span{width:3.5rem;height:3.5rem;display:grid;place-items:center;border-right:1px solid #0e4a36;font:800 2.25rem/1 Archivo,Arial,sans-serif;color:#15191f}.ds-comb span:last-child{border-right:0}"
   },
@@ -229,9 +229,9 @@
    "name": "Status Stamp",
    "kind": "chip",
    "refersTo": "status-stamp",
-   "description": "Signature: one vermilion rubber stamp per page.",
-   "html": "<span class=\"ds-stamp\">Available</span>",
-   "css": ".ds-stamp{display:inline-block;font:800 1.25rem/1 Archivo,Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em;color:#b8301b;border:3px solid #b8301b;padding:.45rem .7rem .4rem;transform:rotate(-4deg)}"
+   "description": "Signature: one vermilion rubber stamp per page, inked through an SVG noise filter (#ink: feTurbulence fractalNoise .9 x2 octaves + feDisplacementMap 2.5), multiply blend, opacity .92; text stays a real element.",
+   "html": "<svg width=\"0\" height=\"0\" style=\"position:absolute\" aria-hidden=\"true\"><filter id=\"ds-ink\" x=\"-5%\" y=\"-10%\" width=\"110%\" height=\"120%\"><feTurbulence type=\"fractalNoise\" baseFrequency=\".9\" numOctaves=\"2\" seed=\"7\" result=\"noise\"/><feDisplacementMap in=\"SourceGraphic\" in2=\"noise\" scale=\"2.5\" xChannelSelector=\"R\" yChannelSelector=\"G\"/></filter></svg><span class=\"ds-stamp\">Available</span>",
+   "css": ".ds-stamp{display:inline-block;font:800 1.25rem/1 Archivo,Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em;color:#b8301b;border:3px solid #b8301b;padding:.45rem .7rem .4rem;transform:rotate(-4deg);filter:url(#ds-ink);mix-blend-mode:multiply;opacity:.92}"
   },
   {
    "name": "Masthead Navigation",
@@ -239,6 +239,27 @@
    "description": "Narrow links beside the printed form title.",
    "html": "<nav class=\"ds-nav\"><a href=\"#\">About</a><a href=\"#\">Creatives</a><a href=\"#\">Projects</a><a href=\"#\">Contact</a></nav>",
    "css": ".ds-nav{display:flex;gap:1.25rem}.ds-nav a{font:600 1rem/1.2 'Archivo Narrow',sans-serif;color:#0e4a36;text-decoration:none;padding:.35rem 0;border-bottom:2px solid transparent}.ds-nav a:hover{border-bottom-color:#0e4a36}.ds-nav a:focus-visible{outline:3px solid #b8301b;outline-offset:2px}"
+  },
+  {
+   "name": "N/A Cell",
+   "kind": "custom",
+   "description": "Fills the leftover columns of an entry grid's last row: a ruled cell with a diagonal strike and N/A, per the form convention for blank fields. Span = columns minus (items mod columns) per breakpoint; hidden when the row is already full. aria-hidden.",
+   "html": "<div class=\"ds-na\"><svg viewBox=\"0 0 100 100\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><line x1=\"0\" y1=\"100\" x2=\"100\" y2=\"0\" stroke=\"currentColor\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/></svg><span>N/A</span></div>",
+   "css": ".ds-na{position:relative;display:grid;place-items:center;min-height:8rem;width:18rem;border:1px solid #0e4a36;background:#f1f5ef}.ds-na svg{position:absolute;inset:0;width:100%;height:100%;color:#39424b}.ds-na span{position:relative;background:#f1f5ef;padding:.2rem .6rem;font:700 1.25rem/1 Archivo,Arial,sans-serif;letter-spacing:.04em;color:#15191f}"
+  },
+  {
+   "name": "Video Play Button",
+   "kind": "button",
+   "description": "Square 3.5rem paper button with a 2px ink rule and a drawn triangle, centred on the poster. Click sets controls, plays, removes itself and focuses the video. aria-label 'Play <title>'.",
+   "html": "<button class=\"ds-play\" type=\"button\" aria-label=\"Play sample cut\"><svg viewBox=\"0 0 20 20\" aria-hidden=\"true\"><path d=\"M5 3l12 7-12 7z\" fill=\"currentColor\"/></svg></button>",
+   "css": ".ds-play{width:3.5rem;height:3.5rem;padding:0;display:grid;place-items:center;background:#f1f5ef;color:#0e4a36;border:2px solid #0e4a36;border-radius:0;cursor:pointer;transition:background-color .18s cubic-bezier(.16,1,.3,1)}.ds-play:hover{background:#dfe9dc}.ds-play:focus-visible{outline:3px solid #b8301b;outline-offset:2px}.ds-play svg{width:1.25rem;height:1.25rem;margin-left:.2rem}"
+  },
+  {
+   "name": "Signature Row",
+   "kind": "custom",
+   "description": "Final contact row: 'Signature' label with the typed name above a 1px ink rule, beside a 'Date accomplished' field. Labels bottom-aligned; stacks as label strips on phones. No handwriting font.",
+   "html": "<div class=\"ds-sign\"><p class=\"l\">Signature</p><div class=\"e\"><p class=\"sig\">Claude Lester Daigan</p></div><p class=\"l\">Date accomplished</p><div class=\"e\"><p>2026</p></div></div>",
+   "css": ".ds-sign{display:grid;grid-template-columns:11rem minmax(0,1fr) 11rem 10rem;border:1px solid #0e4a36;background:#f1f5ef;font-family:Archivo,Arial,sans-serif}.ds-sign p{margin:0}.ds-sign .l{display:flex;align-items:flex-end;background:#dfe9dc;border-right:1px solid #0e4a36;padding:.85rem 1rem;font:700 .8125rem/1.3 'Archivo Narrow',sans-serif;letter-spacing:.05em;text-transform:uppercase;color:#0e4a36}.ds-sign .e{display:flex;align-items:flex-end;padding:1.75rem 1.25rem 1rem}.ds-sign .e+.l{border-left:1px solid #0e4a36}.ds-sign .sig{width:min(100%,26rem);border-bottom:1px solid #0e4a36;padding:0 .25rem .35rem;font-size:1.5rem;font-weight:600;color:#15191f}.ds-sign .e p{font-size:1.25rem;font-weight:600;color:#15191f}"
   }
  ],
  "narrative": {
