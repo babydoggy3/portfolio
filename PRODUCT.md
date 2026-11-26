@@ -8,7 +8,7 @@ web
 
 ## Stack
 
-Static HTML/CSS with minimal vanilla JS, no build step (decided by the user's brief). CSS is authored in `styles.css` and inlined into `index.html` by `tools/inline-css.py`. Hosted on GitHub Pages under the custom domain path `https://claudedaigan.com/portfolio/`, so every URL in the page is relative. The ported gym landing-page demo lives at `landing/` (with `_astro/`) and is not part of this design.
+Static HTML/CSS with minimal vanilla JS, no build step (decided by the user's brief). CSS is authored in `styles.css` and inlined into `index.html` by `tools/inline-css.py`. Hosted on GitHub Pages under the custom domain path `https://claudedaigan.com/marketing/portfolio/`, so every URL in the page is relative. The ported gym landing-page demo lives at `landing/` (with `_astro/`) and is not part of this design.
 
 ## Users
 
@@ -18,11 +18,11 @@ Static HTML/CSS with minimal vanilla JS, no build step (decided by the user's br
 
 ## Product Purpose
 
-A one-page personal portfolio for Claude Lester Daigan (Bohol, Philippines), an Operations & Automation Specialist. It shows the real work (automation projects with live demos, marketing creatives, Google Sheets systems), the work history behind it, and credentials, and it ends in one action: email him or open his LinkedIn. Success = a qualified visitor emails or connects on LinkedIn after seeing the work.
+A one-page marketing portfolio for Claude Lester Daigan, Social Media & Marketing Specialist. It shows marketing creatives only (his own Facebook Page launch posts, concept Instagram/Facebook posts and reels, a lead magnet, a landing page), the work history behind them, and ends in one action: email him or open his LinkedIn. Automation projects and tech certificates live on the separate project portfolio (/portfolio2/), not here. Success = a qualified visitor emails or connects on LinkedIn after seeing the work.
 
 ## Positioning
 
-He came to automation from the operations seat itself: banking teller, HR assistant and aide, procurement officer, digital-marketing VA. He automates the repetitive work he used to do by hand (data entry, applicant screening, reporting, outreach) with Python, n8n and AI agents (LangChain, LangGraph, Deep Agents), and every project on the page has something a visitor can open and use.
+A marketer who came from the operations seat (HR, banking, procurement) and a digital-marketing VA role: he plans and makes the posts, reels, lead magnets and landing pages himself, in Canva and with short video edits, and automates the repetitive parts with n8n. Concept work is always labelled Concept; nothing is presented as client work unless it is.
 
 ## Operating Context
 
