@@ -1,5 +1,3 @@
-include:
-  - _astro
 exclude:
   - PRODUCT.md
   - DESIGN.md

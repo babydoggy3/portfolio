@@ -1,311 +1,444 @@
 {
- "schemaVersion": 2,
- "generatedAt": "2026-11-25T20:34:41.967463Z",
- "title": "Design System: Claude Daigan Portfolio",
- "extensions": {
-  "colorMeta": {
-   "form-green": {
-    "role": "primary",
-    "displayName": "Form Green",
-    "canonical": "#0e4a36",
-    "tonalRamp": [
-     "#17352b",
-     "#215e4a",
-     "#278b6a",
-     "#29bc8b",
-     "#52d6aa",
-     "#8bdac0",
-     "#bee4d8",
-     "#eef6f4"
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-25T23:00:00+00:00",
+  "title": "Design System: Claude Daigan Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "night": {
+        "role": "neutral",
+        "displayName": "Night Street",
+        "canonical": "#0c0b10",
+        "tonalRamp": [
+          "#1c1b22",
+          "#333040",
+          "#4e4964",
+          "#69608a",
+          "#8981a6",
+          "#aca7be",
+          "#cdcbd7",
+          "#ecebef"
+        ]
+      },
+      "night-up": {
+        "role": "neutral",
+        "displayName": "Raised Night",
+        "canonical": "#15141b",
+        "tonalRamp": [
+          "#1c1c22",
+          "#34323e",
+          "#4f4c62",
+          "#696486",
+          "#8985a3",
+          "#aca9bc",
+          "#ceccd6",
+          "#ececef"
+        ]
+      },
+      "steel": {
+        "role": "neutral",
+        "displayName": "Canopy Steel",
+        "canonical": "#23212b",
+        "tonalRamp": [
+          "#1d1c21",
+          "#35333e",
+          "#514d60",
+          "#6c6684",
+          "#8c87a1",
+          "#aeaabb",
+          "#cfcdd5",
+          "#ececef"
+        ]
+      },
+      "steel-hi": {
+        "role": "neutral",
+        "displayName": "Steel Highlight",
+        "canonical": "#3a3744",
+        "tonalRamp": [
+          "#1d1c21",
+          "#36343d",
+          "#524f5f",
+          "#6f6981",
+          "#8e899e",
+          "#afacb9",
+          "#cfced5",
+          "#edecee"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Hairline Rule",
+        "canonical": "#2a2832",
+        "tonalRamp": [
+          "#1d1c21",
+          "#35333d",
+          "#524e5f",
+          "#6e6982",
+          "#8d899f",
+          "#aeacb9",
+          "#cfcdd5",
+          "#ececee"
+        ]
+      },
+      "lamp-white": {
+        "role": "neutral",
+        "displayName": "Lamp White",
+        "canonical": "#f1ebdf",
+        "tonalRamp": [
+          "#262117",
+          "#493e28",
+          "#74603a",
+          "#a28449",
+          "#bba16d",
+          "#cbbb9a",
+          "#ded5c4",
+          "#f1efe9"
+        ]
+      },
+      "dusk-muted": {
+        "role": "neutral",
+        "displayName": "Dusk Muted",
+        "canonical": "#a49eae",
+        "tonalRamp": [
+          "#1e1d20",
+          "#37343c",
+          "#55505d",
+          "#736b7f",
+          "#928b9d",
+          "#b1adb8",
+          "#d0ced4",
+          "#edecee"
+        ]
+      },
+      "bulb-amber": {
+        "role": "primary",
+        "displayName": "Bulb Amber",
+        "canonical": "#ffc25a",
+        "tonalRamp": [
+          "#33240a",
+          "#62430e",
+          "#a16a0c",
+          "#e69304",
+          "#f7ae31",
+          "#f1c374",
+          "#f2dab0",
+          "#f8f0e2"
+        ]
+      },
+      "bulb-amber-hi": {
+        "role": "primary",
+        "displayName": "Bulb Amber Hi",
+        "canonical": "#ffd88f",
+        "tonalRamp": [
+          "#33250a",
+          "#62450e",
+          "#a16d0c",
+          "#e69804",
+          "#f7b231",
+          "#f1c674",
+          "#f2dbb0",
+          "#f8f0e2"
+        ]
+      },
+      "amber-ink": {
+        "role": "primary",
+        "displayName": "Amber Ink",
+        "canonical": "#1c1306",
+        "tonalRamp": [
+          "#2c2112",
+          "#533d1d",
+          "#875f27",
+          "#be832c",
+          "#d4a054",
+          "#dbba8a",
+          "#e6d5bc",
+          "#f4eee6"
+        ]
+      },
+      "bulb-off": {
+        "role": "neutral",
+        "displayName": "Unlit Bulb",
+        "canonical": "#4a3b26",
+        "tonalRamp": [
+          "#252018",
+          "#463a2b",
+          "#6f5b3f",
+          "#9a7b51",
+          "#b49974",
+          "#c7b69e",
+          "#dcd3c7",
+          "#f1eeea"
+        ]
+      },
+      "milk-glass": {
+        "role": "secondary",
+        "displayName": "Milk Glass",
+        "canonical": "#f6edd8",
+        "tonalRamp": [
+          "#2b2412",
+          "#52431e",
+          "#856928",
+          "#bc922f",
+          "#d2ad56",
+          "#dac28b",
+          "#e6d9bd",
+          "#f4f0e6"
+        ]
+      },
+      "glass-edge": {
+        "role": "secondary",
+        "displayName": "Glass Edge",
+        "canonical": "#e3d2ad",
+        "tonalRamp": [
+          "#282215",
+          "#4d4024",
+          "#7b6432",
+          "#ad8a3e",
+          "#c5a663",
+          "#d1be94",
+          "#e1d7c1",
+          "#f3efe8"
+        ]
+      },
+      "letter-black": {
+        "role": "secondary",
+        "displayName": "Black Plastic Letter",
+        "canonical": "#17141a",
+        "tonalRamp": [
+          "#1f1c21",
+          "#38333e",
+          "#574d60",
+          "#756784",
+          "#9487a1",
+          "#b2aabb",
+          "#d1cdd5",
+          "#edecef"
+        ]
+      },
+      "letter-red": {
+        "role": "secondary",
+        "displayName": "Red Plastic Letter",
+        "canonical": "#a3241b",
+        "tonalRamp": [
+          "#2d1210",
+          "#561e1a",
+          "#8c2922",
+          "#c62f24",
+          "#db564d",
+          "#df8c86",
+          "#e8bdba",
+          "#f5e6e5"
+        ]
+      },
+      "case-mat": {
+        "role": "neutral",
+        "displayName": "Case Mat",
+        "canonical": "#07070a",
+        "tonalRamp": [
+          "#1b1b22",
+          "#313140",
+          "#4a4a64",
+          "#616189",
+          "#8282a5",
+          "#a7a7be",
+          "#cbcbd7",
+          "#ebebef"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Marquee Letters",
+        "purpose": "The name on the hero marquee, as hand-hung letter tiles."
+      },
+      "headline": {
+        "displayName": "Section Letterboard",
+        "purpose": "Every section title, as a letterboard."
+      },
+      "title": {
+        "displayName": "Program Title",
+        "purpose": "Project titles and credit roles."
+      },
+      "body": {
+        "displayName": "Program Text",
+        "purpose": "Descriptions and notes, max 54ch; also the tools line (500, 0.8125rem, 0.03em, sentence case)."
+      },
+      "lede": {
+        "displayName": "Box Office Lede",
+        "purpose": "Statement, About text and contact lede."
+      },
+      "label": {
+        "displayName": "Lettered Label",
+        "purpose": "Nav, lamp, dates, links and buttons."
+      }
+    },
+    "shadows": [
+      {
+        "name": "play-lift",
+        "value": "0 6px 18px rgb(0 0 0 / .45)",
+        "purpose": "Lifts the round play button off video posters; the only shadow."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out-expo",
+        "value": "cubic-bezier(.16, 1, .3, 1)",
+        "purpose": "Every state transition (hover, press, tile swing)."
+      },
+      {
+        "name": "chase",
+        "value": "1.05s linear, 4 iterations, forwards (ends opacity 1); three bulb phases offset by 0.35s",
+        "purpose": "Chaser bulbs on canopies: start on first scroll/pointer move when the canopy is on screen, run about 4.2s, settle fully lit; re-run on pointerenter (WCAG 2.2.2)."
+      },
+      {
+        "name": "slot",
+        "value": "one scroll-driven animation per board (view-timeline, cover 0% to 34%) animating registered --put 0 to 1; each tile derives a staggered --k (1.3% per letter, 12% window)",
+        "purpose": "Letters are put up one by one on the Marketing Creatives and closing Let’s Work Together boards only; all other boards are static."
+      },
+      {
+        "name": "drift",
+        "value": "scroll(root) 0 to 110vh, translate to -38%",
+        "purpose": "The poster reel under the hero canopy slides sideways with page scroll."
+      },
+      {
+        "name": "push",
+        "value": "scroll-driven view(), entry 0% to cover 45%, scale 1.12 to 1",
+        "purpose": "The feature poster art settles into its case as it enters (feature poster only)."
+      },
+      {
+        "name": "spot",
+        "value": "scroll-driven view(), opacity .5 to 1",
+        "purpose": "Project titles come up to full light as they reach reading position."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone",
+        "value": "40rem"
+      },
+      {
+        "name": "tablet",
+        "value": "48rem"
+      },
+      {
+        "name": "desk",
+        "value": "64rem"
+      }
     ]
-   },
-   "form-green-deep": {
-    "role": "primary",
-    "displayName": "Deep Form Green",
-    "canonical": "#093526",
-    "tonalRamp": [
-     "#17362b",
-     "#205f4a",
-     "#258d6a",
-     "#26bf8b",
-     "#4fd9aa",
-     "#89dcc0",
-     "#bde5d7",
-     "#eef6f4"
-    ]
-   },
-   "form-green-soft": {
-    "role": "primary",
-    "displayName": "Soft Form Green",
-    "canonical": "#2c5c49",
-    "tonalRamp": [
-     "#1e2e28",
-     "#305043",
-     "#3f735f",
-     "#4d997b",
-     "#72b69b",
-     "#9ec7b7",
-     "#c7dbd3",
-     "#f0f4f3"
-    ]
-   },
-   "stamp-vermilion": {
-    "role": "secondary",
-    "displayName": "Stamp Vermilion",
-    "canonical": "#b8301b",
-    "tonalRamp": [
-     "#371a16",
-     "#61271f",
-     "#903123",
-     "#c33822",
-     "#dc5f4c",
-     "#de9387",
-     "#e6c2bc",
-     "#f7efee"
-    ]
-   },
-   "form-paper": {
-    "role": "neutral",
-    "displayName": "Form Paper",
-    "canonical": "#f1f5ef",
-    "tonalRamp": [
-     "#252b21",
-     "#3c4a35",
-     "#546a48",
-     "#6a8c5a",
-     "#8caa7e",
-     "#aec0a5",
-     "#cfd8cb",
-     "#f2f4f1"
-    ]
-   },
-   "label-tint": {
-    "role": "neutral",
-    "displayName": "Label Tint",
-    "canonical": "#dfe9dc",
-    "tonalRamp": [
-     "#242b21",
-     "#3a4a36",
-     "#506a49",
-     "#668b5a",
-     "#88aa7e",
-     "#abc0a5",
-     "#ced8cb",
-     "#f2f4f1"
-    ]
-   },
-   "desk": {
-    "role": "neutral",
-    "displayName": "Desk",
-    "canonical": "#d9e3d6",
-    "tonalRamp": [
-     "#242a22",
-     "#3b4837",
-     "#52674b",
-     "#68875e",
-     "#8aa682",
-     "#adbda8",
-     "#ced6cc",
-     "#f2f3f1"
-    ]
-   },
-   "entry-ink": {
-    "role": "neutral",
-    "displayName": "Entry Ink",
-    "canonical": "#15191f",
-    "tonalRamp": [
-     "#22252b",
-     "#373e48",
-     "#4b5667",
-     "#5e6f87",
-     "#8190a7",
-     "#a7b0be",
-     "#ccd0d7",
-     "#f1f2f3"
-    ]
-   },
-   "entry-ink-soft": {
-    "role": "neutral",
-    "displayName": "Soft Entry Ink",
-    "canonical": "#39424b",
-    "tonalRamp": [
-     "#232629",
-     "#3a4046",
-     "#4f5963",
-     "#647381",
-     "#8794a1",
-     "#abb2ba",
-     "#cdd1d5",
-     "#f1f2f3"
-    ]
-   }
   },
-  "typographyMeta": {
-   "display": {
-    "displayName": "Name comb",
-    "purpose": "The h1 name, one letter per comb box."
-   },
-   "headline": {
-    "displayName": "Section bar",
-    "purpose": "Uppercase Narrow headings on solid green bars."
-   },
-   "title": {
-    "displayName": "Entry title",
-    "purpose": "Position title, project names, creative and certificate titles."
-   },
-   "body": {
-    "displayName": "Entry body",
-    "purpose": "Summaries and descriptions, max 60ch."
-   },
-   "label": {
-    "displayName": "Printed label",
-    "purpose": "Field labels, table headers, meta labels."
-   }
-  },
-  "shadows": [],
-  "motion": [
-   {
-    "name": "ease-out-expo",
-    "value": "cubic-bezier(.16, 1, .3, 1)",
-    "purpose": "180-200ms colour/opacity transitions on buttons and image links. No entrance animations."
-   }
+  "components": [
+    {
+      "name": "Ticket (primary action)",
+      "kind": "button",
+      "refersTo": "ticket-primary",
+      "description": "The one primary action (Email me): an amber ticket with punched notches and a dashed tear line after the icon stub.",
+      "html": "<a class=\"ds-ticket\" href=\"#\"><span class=\"ds-stub\"><svg viewBox=\"0 0 20 20\" width=\"20\" height=\"20\" aria-hidden=\"true\"><rect x=\"2\" y=\"4\" width=\"16\" height=\"12\" rx=\"1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M2.8 5l7.2 6 7.2-6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"/></svg></span><span>Email me</span></a>",
+      "css": ".ds-ticket{position:relative;isolation:isolate;display:inline-flex;align-items:center;gap:.8rem;min-height:3.5rem;padding:0 1.6rem 0 1.15rem;color:#1c1306;text-decoration:none;font:800 1.4rem/1 \"Sofia Sans Extra Condensed\",\"Arial Narrow\",sans-serif;letter-spacing:.07em;text-transform:uppercase}.ds-ticket::before{content:\"\";position:absolute;inset:0;z-index:-1;background:#ffc25a;-webkit-mask:radial-gradient(circle .5rem at 0 50%, #0000 98%, #000) left / 51% 100% no-repeat, radial-gradient(circle .5rem at 100% 50%, #0000 98%, #000) right / 51% 100% no-repeat;mask:radial-gradient(circle .5rem at 0 50%, #0000 98%, #000) left / 51% 100% no-repeat, radial-gradient(circle .5rem at 100% 50%, #0000 98%, #000) right / 51% 100% no-repeat;transition:background-color .18s cubic-bezier(.16,1,.3,1),transform .18s cubic-bezier(.16,1,.3,1)}.ds-stub{display:grid;place-items:center;align-self:stretch;padding:0 .8rem 0 .35rem;border-right:2px dashed rgb(28 19 6/.4)}.ds-ticket svg{transition:transform .25s cubic-bezier(.16,1,.3,1)}.ds-ticket:hover::before{background:#ffd88f}.ds-ticket:hover svg{transform:translateX(2px) rotate(-6deg)}.ds-ticket:active::before{transform:scale(.97)}.ds-ticket:focus-visible{outline:3px solid #ffc25a;outline-offset:3px}"
+    },
+    {
+      "name": "Line button (secondary)",
+      "kind": "button",
+      "refersTo": "line-button",
+      "description": "Secondary action beside the ticket (LinkedIn).",
+      "html": "<a class=\"ds-line\" href=\"#\">LinkedIn</a>",
+      "css": ".ds-line{display:inline-flex;align-items:center;gap:.55rem;min-height:3.5rem;padding:0 1.3rem;border:1.5px solid rgb(241 235 223/.4);border-radius:2px;color:#f1ebdf;background:#0c0b10;text-decoration:none;font:750 1.3rem/1 \"Sofia Sans Extra Condensed\",\"Arial Narrow\",sans-serif;letter-spacing:.07em;text-transform:uppercase;transition:border-color .18s,color .18s}.ds-line:hover{border-color:#ffc25a;color:#ffc25a}.ds-line:focus-visible{outline:3px solid #ffc25a;outline-offset:3px}"
+    },
+    {
+      "name": "Letterboard",
+      "kind": "custom",
+      "refersTo": "letterboard",
+      "description": "Section title as a backlit milk-glass board in a steel frame: rail grooves under each row of tiles and each hand-hung letter on its own faint tile.",
+      "html": "<h2 class=\"ds-board\"><span class=\"ds-t\">P</span><span class=\"ds-t\">R</span><span class=\"ds-t\">O</span><span class=\"ds-t\">J</span><span class=\"ds-t\">E</span><span class=\"ds-t\">C</span><span class=\"ds-t\">T</span><span class=\"ds-t\">S</span></h2>",
+      "css": ".ds-board{display:inline-flex;margin:0;padding:.28em .4em .24em;font:800 3.5rem/1 \"Sofia Sans Extra Condensed\",\"Arial Narrow\",sans-serif;text-transform:uppercase;color:#17141a;background:radial-gradient(130% 160% at 50% -10%,#fffaf0 0%,#f6edd8 45%,#e3d2ad 100%);border:8px solid #23212b;outline:1px solid #3a3744}.ds-board{background-image:repeating-linear-gradient(to bottom,transparent 0 .95em,rgb(60 44 22/.26) .95em .985em,rgb(255 255 255/.6) .985em 1.01em,transparent 1.01em 1.08em),radial-gradient(130% 160% at 50% -10%,#fffaf0 0%,#f6edd8 45%,#e3d2ad 100%)}.ds-t{display:inline-block;padding:.06em .035em .02em;margin-inline:.02em;line-height:.9;background:rgb(255 255 255/.35);box-shadow:0 1px 0 rgb(0 0 0/.18),inset 0 -1px 0 rgb(0 0 0/.08)}.ds-t:nth-child(3n+1){rotate:-1.4deg}.ds-t:nth-child(4n+2){rotate:1.1deg;translate:0 .025em}.ds-t:nth-child(5n+3){rotate:-.5deg}"
+    },
+    {
+      "name": "Poster case",
+      "kind": "card",
+      "refersTo": "poster-case",
+      "description": "A creative in a steel case on a near-black mat with its caption below; non-4:5 art is contained, never cropped.",
+      "html": "<figure class=\"ds-poster\"><div class=\"ds-case\"><div class=\"ds-art\">Poster</div></div><figcaption><b>Chido Cafe — Taco Night</b><span>Instagram Post · Concept</span></figcaption></figure>",
+      "css": ".ds-poster{margin:0;width:12rem;font-family:\"Sofia Sans\",Arial,sans-serif;color:#f1ebdf}.ds-case{aspect-ratio:4/5;background:#07070a;border:6px solid #23212b;outline:1px solid #3a3744;outline-offset:-1px;display:grid;place-items:center;transition:border-color .3s}.ds-poster:hover .ds-case{border-color:#3b352a}.ds-art{color:#a49eae;font-size:.85rem}.ds-poster figcaption{padding-top:.8rem;display:grid;gap:.15rem}.ds-poster b{font-weight:680}.ds-poster span{color:#a49eae;font-size:.9375rem}"
+    },
+    {
+      "name": "Status lamp",
+      "kind": "chip",
+      "refersTo": "status-lamp",
+      "description": "The availability indicator: a lit bulb and AVAILABLE in tracked condensed caps.",
+      "html": "<p class=\"ds-lamp\"><span class=\"ds-bulb\"></span>Available</p>",
+      "css": ".ds-lamp{display:inline-flex;align-items:center;gap:.55rem;margin:0;font:750 1.125rem/1.6 \"Sofia Sans Extra Condensed\",\"Arial Narrow\",sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#ffc25a;padding:.2rem .7rem .2rem .55rem;border:1px solid rgb(255 194 90/.45);border-radius:2px;background:#0c0b10}.ds-bulb{width:.7rem;height:.7rem;border-radius:50%;background:radial-gradient(circle at 40% 35%,#fff6dc 0 18%,#ffc25a 45%,#c98a1d 100%)}"
+    },
+    {
+      "name": "Section navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Top row of condensed uppercase section links; scrolls sideways on phones.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\">Creatives</a><a href=\"#\">Projects</a><a href=\"#\">About</a><a href=\"#\">Contact</a></nav>",
+      "css": ".ds-nav{display:flex;gap:1.5rem;background:#0c0b10;padding:0 1rem}.ds-nav a{font:650 1.125rem/1.6 \"Sofia Sans Extra Condensed\",\"Arial Narrow\",sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#a49eae;text-decoration:none;padding:.6rem 0 .5rem;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}.ds-nav a:hover{color:#f1ebdf;border-bottom-color:#ffc25a}.ds-nav a:focus-visible{outline:3px solid #ffc25a;outline-offset:3px}"
+    },
+    {
+      "name": "Program link",
+      "kind": "custom",
+      "refersTo": "go-link",
+      "description": "A project link: amber condensed caps with underline and arrow-out icon; links to a running demo add a lit bulb before the label (lit = live).",
+      "html": "<a class=\"ds-go ds-live\" href=\"#\">View Dashboard Demo</a>",
+      "css": ".ds-go{display:inline-flex;align-items:center;min-height:2.75rem;font:750 1.3rem/1 \"Sofia Sans Extra Condensed\",\"Arial Narrow\",sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#ffc25a;background:#0c0b10;text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:.25em}.ds-go:hover{color:#ffd88f;text-decoration-thickness:3px}.ds-live::before{content:\"\";flex:none;width:.5em;height:.5em;margin-right:.45em;border-radius:50%;background:radial-gradient(circle at 40% 35%,#fff6dc 0 18%,#ffc25a 45%,#c98a1d 100%)}"
+    }
   ],
-  "breakpoints": [
-   {
-    "name": "wide",
-    "value": "68rem"
-   },
-   {
-    "name": "tablet",
-    "value": "52rem"
-   },
-   {
-    "name": "phone",
-    "value": "40rem"
-   }
-  ]
- },
- "components": [
-  {
-   "name": "Primary Button",
-   "kind": "button",
-   "refersTo": "button-primary",
-   "description": "Email me: the one primary action.",
-   "html": "<a class=\"ds-btn-primary\" href=\"#\"><svg viewBox=\"0 0 20 20\" width=\"18\" height=\"18\" aria-hidden=\"true\"><rect x=\"2\" y=\"4\" width=\"16\" height=\"12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M2.8 5l7.2 6 7.2-6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"/></svg>Email me</a>",
-   "css": ".ds-btn-primary{display:inline-flex;align-items:center;gap:.55rem;min-height:3rem;padding:.7rem 1.25rem;font:700 1.0625rem/1 Archivo,Arial,sans-serif;text-decoration:none;background:#0e4a36;color:#f1f5ef;border:2px solid #0e4a36;border-radius:0;transition:background-color .18s cubic-bezier(.16,1,.3,1)}.ds-btn-primary:hover{background:#093526;border-color:#093526}.ds-btn-primary:focus-visible{outline:3px solid #b8301b;outline-offset:2px}"
-  },
-  {
-   "name": "Plain Button",
-   "kind": "button",
-   "refersTo": "button-plain",
-   "description": "Secondary action (LinkedIn).",
-   "html": "<a class=\"ds-btn-plain\" href=\"#\">LinkedIn</a>",
-   "css": ".ds-btn-plain{display:inline-flex;align-items:center;min-height:3rem;padding:.7rem 1.25rem;font:700 1.0625rem/1 Archivo,Arial,sans-serif;text-decoration:none;background:transparent;color:#0e4a36;border:2px solid #0e4a36;border-radius:0;transition:background-color .18s cubic-bezier(.16,1,.3,1)}.ds-btn-plain:hover{background:#dfe9dc}.ds-btn-plain:focus-visible{outline:3px solid #b8301b;outline-offset:2px}"
-  },
-  {
-   "name": "Section Bar",
-   "kind": "custom",
-   "refersTo": "section-bar",
-   "description": "Solid green band that opens every section.",
-   "html": "<h2 class=\"ds-bar\">Work experience</h2>",
-   "css": ".ds-bar{margin:0;background:#0e4a36;color:#f1f5ef;font:700 1.5rem/1.2 'Archivo Narrow','Arial Narrow',sans-serif;text-transform:uppercase;letter-spacing:.05em;padding:.7rem 1.5rem .65rem}"
-  },
-  {
-   "name": "Field Row",
-   "kind": "custom",
-   "refersTo": "field-label",
-   "description": "Tinted label column beside a filled-in entry.",
-   "html": "<div class=\"ds-row\"><p class=\"ds-label\">Position</p><p class=\"ds-entry\">Operations &amp; Automation Specialist</p></div>",
-   "css": ".ds-row{display:grid;grid-template-columns:11rem 1fr;border:1px solid #0e4a36;background:#f1f5ef}.ds-label{margin:0;background:#dfe9dc;border-right:1px solid #0e4a36;padding:.85rem 1rem;font:700 .8125rem/1.3 'Archivo Narrow',sans-serif;text-transform:uppercase;letter-spacing:.05em;color:#0e4a36}.ds-entry{margin:0;padding:.85rem 1.5rem;font:600 1.25rem/1.25 Archivo,Arial,sans-serif;color:#15191f}"
-  },
-  {
-   "name": "Name Comb",
-   "kind": "custom",
-   "description": "Signature: letters typed one per square box, trailing boxes left empty; auto-fill minmax(box,1fr) tracks fill the row exactly, spare rows clipped.",
-   "html": "<div class=\"ds-comb\"><span>C</span><span>L</span><span>A</span><span>U</span><span>D</span><span>E</span><span></span><span></span></div>",
-   "css": ".ds-comb{display:flex;border:1px solid #0e4a36;background:#f1f5ef;width:max-content}.ds-comb span{width:3.5rem;height:3.5rem;display:grid;place-items:center;border-right:1px solid #0e4a36;font:800 2.25rem/1 Archivo,Arial,sans-serif;color:#15191f}.ds-comb span:last-child{border-right:0}"
-  },
-  {
-   "name": "Status Stamp",
-   "kind": "chip",
-   "refersTo": "status-stamp",
-   "description": "Signature: one vermilion rubber stamp per page, inked through an SVG noise filter (#ink: feTurbulence fractalNoise .9 x2 octaves + feDisplacementMap 2.5), multiply blend, opacity .92; text stays a real element.",
-   "html": "<svg width=\"0\" height=\"0\" style=\"position:absolute\" aria-hidden=\"true\"><filter id=\"ds-ink\" x=\"-5%\" y=\"-10%\" width=\"110%\" height=\"120%\"><feTurbulence type=\"fractalNoise\" baseFrequency=\".9\" numOctaves=\"2\" seed=\"7\" result=\"noise\"/><feDisplacementMap in=\"SourceGraphic\" in2=\"noise\" scale=\"2.5\" xChannelSelector=\"R\" yChannelSelector=\"G\"/></filter></svg><span class=\"ds-stamp\">Available</span>",
-   "css": ".ds-stamp{display:inline-block;font:800 1.25rem/1 Archivo,Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em;color:#b8301b;border:3px solid #b8301b;padding:.45rem .7rem .4rem;transform:rotate(-4deg);filter:url(#ds-ink);mix-blend-mode:multiply;opacity:.92}"
-  },
-  {
-   "name": "Masthead Navigation",
-   "kind": "nav",
-   "description": "Narrow links beside the printed form title.",
-   "html": "<nav class=\"ds-nav\"><a href=\"#\">About</a><a href=\"#\">Creatives</a><a href=\"#\">Projects</a><a href=\"#\">Contact</a></nav>",
-   "css": ".ds-nav{display:flex;gap:1.25rem}.ds-nav a{font:600 1rem/1.2 'Archivo Narrow',sans-serif;color:#0e4a36;text-decoration:none;padding:.35rem 0;border-bottom:2px solid transparent}.ds-nav a:hover{border-bottom-color:#0e4a36}.ds-nav a:focus-visible{outline:3px solid #b8301b;outline-offset:2px}"
-  },
-  {
-   "name": "N/A Cell",
-   "kind": "custom",
-   "description": "Fills the leftover columns of an entry grid's last row: a ruled cell with a diagonal strike and N/A, per the form convention for blank fields. Span = columns minus (items mod columns) per breakpoint; hidden when the row is already full. aria-hidden.",
-   "html": "<div class=\"ds-na\"><svg viewBox=\"0 0 100 100\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><line x1=\"0\" y1=\"100\" x2=\"100\" y2=\"0\" stroke=\"currentColor\" stroke-width=\"1.5\" vector-effect=\"non-scaling-stroke\"/></svg><span>N/A</span></div>",
-   "css": ".ds-na{position:relative;display:grid;place-items:center;min-height:8rem;width:18rem;border:1px solid #0e4a36;background:#f1f5ef}.ds-na svg{position:absolute;inset:0;width:100%;height:100%;color:#39424b}.ds-na span{position:relative;background:#f1f5ef;padding:.2rem .6rem;font:700 1.25rem/1 Archivo,Arial,sans-serif;letter-spacing:.04em;color:#15191f}"
-  },
-  {
-   "name": "Video Play Button",
-   "kind": "button",
-   "description": "Square 3.5rem paper button with a 2px ink rule and a drawn triangle, centred on the poster. Click sets controls, plays, removes itself and focuses the video. aria-label 'Play <title>'.",
-   "html": "<button class=\"ds-play\" type=\"button\" aria-label=\"Play sample cut\"><svg viewBox=\"0 0 20 20\" aria-hidden=\"true\"><path d=\"M5 3l12 7-12 7z\" fill=\"currentColor\"/></svg></button>",
-   "css": ".ds-play{width:3.5rem;height:3.5rem;padding:0;display:grid;place-items:center;background:#f1f5ef;color:#0e4a36;border:2px solid #0e4a36;border-radius:0;cursor:pointer;transition:background-color .18s cubic-bezier(.16,1,.3,1)}.ds-play:hover{background:#dfe9dc}.ds-play:focus-visible{outline:3px solid #b8301b;outline-offset:2px}.ds-play svg{width:1.25rem;height:1.25rem;margin-left:.2rem}"
-  },
-  {
-   "name": "Signature Row",
-   "kind": "custom",
-   "description": "Final contact row: 'Signature' label with the typed name above a 1px ink rule, beside a 'Date accomplished' field. Labels bottom-aligned; stacks as label strips on phones. No handwriting font.",
-   "html": "<div class=\"ds-sign\"><p class=\"l\">Signature</p><div class=\"e\"><p class=\"sig\">Claude Lester Daigan</p></div><p class=\"l\">Date accomplished</p><div class=\"e\"><p>2026</p></div></div>",
-   "css": ".ds-sign{display:grid;grid-template-columns:11rem minmax(0,1fr) 11rem 10rem;border:1px solid #0e4a36;background:#f1f5ef;font-family:Archivo,Arial,sans-serif}.ds-sign p{margin:0}.ds-sign .l{display:flex;align-items:flex-end;background:#dfe9dc;border-right:1px solid #0e4a36;padding:.85rem 1rem;font:700 .8125rem/1.3 'Archivo Narrow',sans-serif;letter-spacing:.05em;text-transform:uppercase;color:#0e4a36}.ds-sign .e{display:flex;align-items:flex-end;padding:1.75rem 1.25rem 1rem}.ds-sign .e+.l{border-left:1px solid #0e4a36}.ds-sign .sig{width:min(100%,26rem);border-bottom:1px solid #0e4a36;padding:0 .25rem .35rem;font-size:1.5rem;font-weight:600;color:#15191f}.ds-sign .e p{font-size:1.25rem;font-weight:600;color:#15191f}"
+  "narrative": {
+    "northStar": "The Moviehouse at Night",
+    "overview": "The page is a provincial cinema seen from the street after dark. His name is up on the marquee in slotted plastic letters on backlit milk glass, a steel canopy carries rows of chaser bulbs, the creatives hang in steel poster cases, the projects read like a program of showings, work history rolls like end credits, and the page closes on a second marquee where the box office is open. The ground is a blue-black night; light is the only accent, and light always means something is live or on offer.\n\nType is the spectacle. The letterboard face is set as large as the viewport allows and every letter sits slightly askew on its rail, the way a changer hangs them by hand. Everything outside the boards is quiet: warm lamp-white prose, dusk-grey captions, generous dark space between sections. The first viewport is the marquee plus the box office, with the actual creatives already drifting past underneath.\n\nThis world replaced the earlier \"Personal Data Sheet\" green form world; that look, the white/blue rounded-card template, and the marketing site's navy/gold Messenger-thread world are all anti-references.",
+    "keyCharacteristics": [
+      "Blue-black night ground, never pure black, never a gradient wash.",
+      "Backlit milk-glass letterboards in black and cinema-red condensed letters, each letter its own slightly rotated tile.",
+      "Amber bulb light as the single accent: chaser rails, the AVAILABLE lamp, skill bullets, links, the ticket CTA.",
+      "Steel-framed poster cases with a near-black mat; artwork is never cropped past its headline.",
+      "Motion belongs to the marquee: bulbs that chase a few rounds then settle lit, letters put up one by one on the two signature boards, posters drifting under the canopy."
+    ],
+    "rules": [
+      {
+        "name": "The Lit Means Live Rule",
+        "body": "Amber appears only on things that are on: the availability lamp, actions, live links, lit bulbs. Never as a decorative wash or a glow behind content. A project link to a running demo carries a lit bulb before its label; links to sheets and forms do not.",
+        "section": "colors"
+      },
+      {
+        "name": "The Glass Only Rule",
+        "body": "Light grounds exist only as letterboards and certificate mats. Sections, cards and panels stay on the night.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Widths Rule",
+        "body": "Condensed is for anything that would be lettered on the building (boards, titles, labels, buttons); regular width is for anything you would read in the program. Never set prose in the condensed cut.",
+        "section": "typography"
+      },
+      {
+        "name": "The Hand-Hung Rule",
+        "body": "Board letters are separate tiles with small, varied rotations (−1.4° to 1.8°) and offsets. Never set a board as a straight text string.",
+        "section": "typography"
+      },
+      {
+        "name": "The Slotted Board Rule",
+        "body": "Every board reads as a changeable letterboard: rail grooves under each row of tiles and each letter on its own faint tile.",
+        "section": "typography"
+      },
+      {
+        "name": "The No Glow Rule",
+        "body": "No coloured halos or glow shadows on the night ground. Bulbs carry their own small light inside their drawing; nothing else glows.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** set every section title as a letterboard of individual tiles, with screen-reader text in an sr-only span and the tiles aria-hidden.",
+      "**Do** keep motion optional (prefers-reduced-motion: no-preference): chaser bulbs run 4 rounds and settle fully lit, starting on first scroll/pointer move and re-running on canopy hover; letters are put up only on #creatives-h and #contact-h (one animation per board); push-in on the feature poster only; scroll-driven motion inside @supports (animation-timeline: view()).",
+      "**Do** keep first-viewport content visible at rest: no opacity-0 starts, no load-time staggered entrances.",
+      "**Do** mark links that leave the page with the arrow-out icon and \"(opens in a new tab)\" sr-only text.",
+      "**Do** keep every URL relative; the page lives under /portfolio/.",
+      "**Do** keep credits as role on the left, then company, dates and notes on the right; never dates above the role."
+    ],
+    "donts": [
+      "**Don't** reuse the Personal Data Sheet form look, the white/blue rounded-card template, or the marketing site's navy/gold Messenger-thread world.",
+      "**Don't** add coloured glow shadows, gradient text, glassmorphism or radial halo washes on the night ground.",
+      "**Don't** use amber for decoration; it marks only lit, live or actionable things.",
+      "**Don't** autoplay video with sound or add looping motion that keeps running off-screen.",
+      "**Don't** set prose in the condensed face or boards in the regular one."
+    ]
   }
- ],
- "narrative": {
-  "northStar": "The Filled-In Record",
-  "overview": "The page is one printed form, a Philippine-style personal data sheet, already completed by its owner. Every recruiter and HR person has typed into a sheet like this; here the boxes hold his work instead of blanks. The printed parts of the form (rules, field-label column, solid section bars) are one deep green ink on pale security-green paper; everything he \"filled in\" is near-black. One vermilion rubber stamp marks his status.\n\nDensity is a form's density: tight label/entry rows, hairline rules between every field, no floating cards, no decoration that a print shop would not have set. Expression comes from the name typed letter by letter into comb boxes at poster scale, the passport-photo box, and the stamp. The previous Tailwind look (white, blue accent, rounded cards, dot grid) and the marketing site's Messenger/navy-gold world are rejected for this surface.",
-  "keyCharacteristics": [
-   "One sheet on a desk: a bordered paper panel centred on a slightly darker green field.",
-   "Printed vs. filled: green for the form, near-black for his entries.",
-   "Square everything: 0 radius, 1px and 2px ink rules, no shadows.",
-   "Labels sit in a tinted left column, never as eyebrows above headings.",
-   "State is a mark: ticked boxes, a rubber stamp, an arrow-out glyph on links that leave the page."
-  ],
-  "rules": [
-   {
-    "name": "The Printed vs. Filled Rule",
-    "body": "Green is for what the form prints; near-black is for what he wrote. Never set his content in green or the form's furniture in black.",
-    "section": "colors"
-   },
-   {
-    "name": "The One Stamp Rule",
-    "body": "Vermilion appears once per screen at most, as a stamp or a focus ring. It is never a fill, a link colour or a decoration.",
-    "section": "colors"
-   },
-   {
-    "name": "The Two Widths Rule",
-    "body": "Narrow is only ever printed furniture; regular width is only ever content. Do not set entries in Narrow caps.",
-    "section": "typography"
-   },
-   {
-    "name": "The Whole Cells Rule",
-    "body": "Comb boxes and grid cells never render fractionally: the comb uses auto-fill tracks and hides overflow rows, and empty trailing grid slots stay blank paper.",
-    "section": "layout"
-   }
-  ],
-  "dos": [
-   "Do put every new block on the label column grid with a 1px ink rule below it.",
-   "Do keep the name comb as the largest element in the first viewport.",
-   "Do mark links that leave the page with the arrow-out icon and \"(opens in a new tab)\" text for screen readers.",
-   "Do keep all URLs relative; the page lives under /portfolio/."
-  ],
-  "donts": [
-   "Don't add rounded cards, shadows, gradients or a second accent colour.",
-   "Don't put a kicker or eyebrow above a heading; labels live in the left column.",
-   "Don't use vermilion for anything except the status stamp and focus ring.",
-   "Don't reuse the marketing site's Messenger-thread or navy-and-gold look, or link to the marketing site.",
-   "Don't add autoplaying media or entrance animations."
-  ]
- }
 }
