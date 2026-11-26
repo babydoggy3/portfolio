@@ -5,7 +5,8 @@
   font-family: "Sofia Sans Extra Condensed";
   font-style: normal;
   font-weight: 100 1000;
-  font-display: swap;
+  /* block, not swap: the marquee letters are sized for this face; a wide fallback re-wraps the name and shifts the hero (CLS 0.26 on desktop). Preloaded and ~15 KB. */
+  font-display: block;
   src: url("assets/fonts/sofia-sans-extra-condensed-sub.woff2") format("woff2");
 }
 @font-face {
