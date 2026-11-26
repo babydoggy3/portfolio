@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://claudedaigan.com/portfolio/sitemap.xml
+Sitemap: https://claudedaigan.com/marketing/portfolio/sitemap.xml
